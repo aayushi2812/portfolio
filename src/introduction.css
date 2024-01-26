@@ -1,0 +1,18 @@
+.card-intro{
+ border: none;   
+ background-color: #43766C !important;
+ height: 300px;
+ color: #F8FAE5;
+} 
+.card-intro p{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 17%;
+    padding-right: 17%;
+    text-align: center;
+    color: #F8FAE5;
+    font-size: 18px;
+}
+.card-intro h1{
+    color: #F8FAE5;
+}

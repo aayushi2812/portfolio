@@ -1,0 +1,31 @@
+.cardsSkills{
+    display: flex;
+    justify-content: space-around;
+}
+.cardSkills{
+    border: solid;
+    width: 22%;
+    background-color: #76453B !important;
+    color: #F8FAE5;
+}
+.contentSkills{
+    text-align: center;
+    color: #F8FAE5;
+}
+.Typography{
+    text-align: center;
+}
+.contentTools{
+    text-align: center;
+    color: #F8FAE5;
+}
+.contentTools .info{
+    text-align: justify;
+}
+.icon{
+    font-size: 35px;
+}
+.css-z2eky3-MuiTypography-root{
+    font-style: italic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}

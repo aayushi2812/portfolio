@@ -1,0 +1,20 @@
+.cardsExperience{
+    display: flex;
+    justify-content: space-around;
+}
+.cardExperience{
+    border: solid;
+    background-color: #43766C !important;
+    color: #F8FAE5;
+}
+.contentExperience{
+    text-align: left;
+    padding: 0px;
+    color: #F8FAE5;
+}
+.contentFirstExperience{
+    text-align: center;
+}
+.textFirstExperience{
+    margin-left: 15px !important;
+}

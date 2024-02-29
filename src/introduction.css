@@ -1,18 +1,30 @@
 .card-intro{
  border: none;   
- background-color: #43766C !important;
- height: 300px;
- color: #F8FAE5;
+ /* background-color: #F8FAE5 !important;  */
+ height: 500px;
+ color: #76453B;
+ margin-top: 5%;
+ border-radius: 0;
+ box-shadow: none !important;
 } 
 .card-intro p{
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 17%;
     padding-right: 17%;
-    text-align: center;
-    color: #F8FAE5;
+    text-align: justify;
+    color: #76453B;
     font-size: 18px;
+
 }
 .card-intro h1{
-    color: #F8FAE5;
+    color: #76453B;
+}
+.intro-data{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.imgStyle{
+    border-radius: 50% !important;
 }

@@ -1,0 +1,136 @@
+.landingPage{
+    height: 945px;
+    position:relative;
+}
+.logo{
+    margin-left: 1%;
+  }
+  .bi{
+    font-size: 50px;
+    padding: 1%;
+  }
+  .intro{
+    text-align: center;
+    background-color: #43766C;
+    color: #F8FAE5;
+    height:95%;
+    padding-top: 10%;
+  }
+  .image{
+    margin-top: 35%;
+  }
+  .text-first{
+    font-size: 50px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+  .text-second{
+    font-size: 80px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+  .intro text p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5%;
+    font-size: 25px;
+    background-color: #43766C;
+    height: 80px;
+    border-color: #F8FAE5;
+    color: #F8FAE5;
+    width: 100%;
+    border-bottom: #76453B;
+
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 30px;
+  }
+.introskills{
+    height: 945px;
+    position:relative;
+}
+.nav li{
+  display: flex;
+  margin-top: 15px;
+}
+.header{
+  position: relative;
+  width: 100%;
+}
+.btn-landing-page{
+  background-color: #F8FAE5 !important;
+  color: #76453B;
+  height: 50px;
+  width: 150px;
+  font-size: large;
+  margin-top: 2%;
+}
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  margin: 2%;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #F8FAE5;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}

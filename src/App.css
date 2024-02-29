@@ -3,45 +3,6 @@
   font-family: 'TAN Mon Cheri';
   color: #76453B;
 }
-.logo{
-  margin-left: 1%;
-}
-.intro{
-  margin-top: 5%;
-  margin-left: 10%;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
-}
-.text{
-  text-align: left;
-  margin: 0px;
-}
-.text-first{
-  font-size: 30px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-}
-.text-second{
-  font-size: 60px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-}
-.intro text p{
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-}
-.nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 5%;
-  font-size: 25px;
-}
-.nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
+.components{
+  height: fit-content;
 }

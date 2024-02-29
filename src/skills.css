@@ -29,3 +29,13 @@
     font-style: italic;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
+
+.btn-lg{
+    margin: 50px;
+    border-style: solid;
+    background-color: white;
+    height: 20%;
+}
+.skills{
+    margin-top: 5%;
+}

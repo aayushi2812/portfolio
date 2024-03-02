@@ -10,41 +10,81 @@ import "./skills.css";
 
 function skills() {
   return (
-    <div className="skills">
+    <div className="container-fluid skills">
       <h1>Skills</h1>
-      <div>
-        <button type="button" class="btn btn-lg">
-          <img src='/html.png' alt='html' height={120} width={120}/>
+      <div className="row">
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/html1.png' alt='html' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '80%' }} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        <button type="button" class="btn btn-lg">
-          <img src='/css.png' alt='css' height={120} width={120}/>
+        </div>
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/css.png' alt='css' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '80%' }} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        <button type="button" class="btn btn-lg">
-          <img src='/javascript.png' alt='javascript' height={120} width={120}/>
+        </div>
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/javascript.png' alt='javascript' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '80%' }} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        <button type="button" class="btn btn-lg">
-          <img src='/angular.png' alt='angular' height={120} width={120}/>
+        </div>
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/angular.png' alt='angular' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '90%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        <button type="button" class="btn btn-lg">
-          <img src='/react.png' alt='react' height={120} width={120}/>
+        </div>
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/react.png' alt='react' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        <br />
-        <button type="button" class="btn btn-lg">
-          <img src='/node.png' alt='node' height={120} width={120}/>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/nodejs.png' alt='node' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        <button type="button" class="btn btn-lg">
-          <img src='/java.png' alt='java' height={120} width={120}/>
+        </div>
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/java.png' alt='java' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '80%' }} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        <button type="button" class="btn btn-lg">
-          <img src='/spring.png' alt='spring' height={120} width={120}/>
+        </div>
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/spring.png' alt='spring' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '80%' }} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        <button type="button" class="btn btn-lg">
-          <img src='/Python1.png' alt='python' height={120} width={120}/>
+        </div>
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/Python1.png' alt='python' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        <button type="button" class="btn btn-lg">
-          <img src='/mysql.png' alt='mysql' height={120} width={120}/>
+        </div>
+        <div className="col-md-5-cols"><button type="button" class="btn btn-lg">
+          <img src='/mysql.png' alt='mysql' className="image-skills" />
+          <div class="middle progress">
+            <div class="progress-bar" role="progressbar" style={{ width: '70%' }} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </button>
-        
+        </div>
       </div>
     </div>
   );

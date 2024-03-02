@@ -34,8 +34,38 @@
     margin: 50px;
     border-style: solid;
     background-color: white;
-    height: 20%;
 }
+.image-skills{
+    height: 120px !important;
+    width: 120px !important;
+    opacity: 1;
+}
+.img:hover{
+    height: 80;
+    width: 80;
+    transition-duration: 0.3s;
+}
+
+.btn:hover .image-skills {
+    opacity: 1;
+    height: 20;
+    width: 20;
+}
+.middle{
+    opacity: 0;
+    transition: .5s ease;
+    margin-top: 10%;
+}
+.btn:hover .middle {
+    opacity: 1;
+  }
 .skills{
     margin-top: 5%;
+}
+.progress-bar{
+    width: 5%;
+}
+.row{
+    align-items: center;
+    justify-content: space-evenly;
 }

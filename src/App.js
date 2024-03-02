@@ -5,27 +5,19 @@ import Introduction from './introduction';
 import Skills from './skills';
 import Projects from './projects';
 import ContactMe from './contactMe';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="app">
-      <LandingPage />
-      <Components />
+    <div className='app'>
+    <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<LandingPage />}>
+      </Route>
+      </Routes>
+    </BrowserRouter>
     </div>
   );
-}
-
-function Components() {
-  return (
-    <div>
-      <div className='components'>
-        <Introduction />
-        <Skills />
-      </div>
-      <Projects />
-      <ContactMe />
-    </div>
-  )
 }
 
 export default App;

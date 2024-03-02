@@ -8,10 +8,10 @@
  box-shadow: none !important;
 } 
 .card-intro p{
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 17%;
-    padding-right: 17%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: justify;
     color: #76453B;
     font-size: 18px;
@@ -22,9 +22,10 @@
 }
 .intro-data{
     display: flex;
-    margin-left: 20%;
     margin-top: 5%;
 }
 .imgStyle{
     border-radius: 50% !important;
+}
+.intro-text{
 }

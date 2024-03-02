@@ -1,10 +1,14 @@
+.container-fluid{
+  height: 100%;
+  padding: 0;
+}
+.row{
+  margin: 0;
+}
 .landingPage{
-    height: 945px;
+    height: 1000px;
     position:relative;
 }
-.logo{
-    margin-left: 1%;
-  }
   .bi{
     font-size: 50px;
     padding: 1%;
@@ -15,6 +19,8 @@
     color: #F8FAE5;
     height:95%;
     padding-top: 10%;
+    background-size: cover;
+    width: 100%;
   }
   .image{
     margin-top: 35%;
@@ -37,7 +43,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 5%;
     font-size: 25px;
     background-color: #43766C;
     height: 80px;
@@ -45,14 +50,13 @@
     color: #F8FAE5;
     width: 100%;
     border-bottom: #76453B;
-
+    padding-right: 2%;
   }
   .nav ul {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 4rem;
-    margin-right: 30px;
   }
 .introskills{
     height: 945px;
@@ -63,16 +67,24 @@
   margin-top: 15px;
 }
 .header{
-  position: relative;
+  position: fixed;
+  overflow-y: hidden;
   width: 100%;
 }
 .btn-landing-page{
   background-color: #F8FAE5 !important;
   color: #76453B;
   height: 50px;
-  width: 150px;
+  width: 200px;
   font-size: large;
   margin-top: 2%;
+  box-shadow: 0px 0px 0px 2px #F8FAE5;
+  transition-duration: 0.3s;
+}
+.btn.btn-landing-page:hover{
+  transition-duration: 0.3s;
+    background-color: #43766C !important;
+    color:#F8FAE5;
 }
 .burger {
   position: relative;
@@ -118,7 +130,18 @@
   transform: translateY(-100%);
 }
 
-.burger input:checked ~ span:nth-of-type(1) {
+.bi-x{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.MuiListItemText-root{
+  justify-content: center;
+  display: flex;
+}
+
+/*.burger input:checked ~ span:nth-of-type(1) {
   transform: rotate(45deg);
   top: 0px;
   left: 5px;
@@ -133,4 +156,8 @@
   transform: rotate(-45deg);
   top: 28px;
   left: 5px;
+} */
+.collapse{
+  height: 150px;
+  z-index: 9999;
 }

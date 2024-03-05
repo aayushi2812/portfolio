@@ -2,18 +2,29 @@
     height: 20px;
     width: 20px;
 }
+.bi-linkedIn .bi-github .bi-envelope{
+    padding-top: 25%;
+    font-size: 50px;
+}
+.a-tag{
+    color: #F8FAE5 !important;
+}
+.a-tag:hover {
+    color: #76453B !important;
+    transition-duration: .3s;
+  }
 .contactMeCard{
     padding-top: 3%;
     text-align: center;
     font-size: 18px;
-    height: 500px;
+    height: 320px;
     margin-top: 5%;
 }
 .contactMe-card-intro{
     padding-top: 2%;
     border: none;   
     background-color: #43766C !important;
-    height: 700px;
+    height: 320px;
     color: #F8FAE5 !important;
 }
 .inputTag{
@@ -119,7 +130,48 @@
   }
   .backontop{
     display: flex;
-    margin-top: 10%;
+    margin-top: 2%;
     align-items: center !important;
     justify-content: space-around !important;
   }
+  .btn-contact-page {
+    background-color: #F8FAE5 !important;
+    color: #76453B;
+    height: 50px;
+    width: 50px;
+    font-size: large;
+    margin: 5%;
+    box-shadow: 0px 0px 0px 2px #F8FAE5;
+    transition-duration: 0.3s;
+    animation: buttonMovement 3s;
+    -moz-animation: buttonMovement 3s;
+    /* Firefox */
+    -webkit-animation: buttonMovement 3s;
+    /* Safari and Chrome */
+    -o-animation: buttonMovement 3s;
+    /* Opera */
+  }
+  @keyframes buttonMovement {
+    from {
+      opacity: 0;
+      transform: translateY(300px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  .line4{
+    border-top: 3px solid #F8FAE5;
+    width: 220px;
+    display: inline-flex;
+    justify-content: center;
+    animation: lineMovement 3s;
+  -moz-animation: lineMovement 3s;
+  -webkit-animation: lineMovement 3s;
+  -o-animation: lineMovement 3s;
+}
+.content{
+    margin-top: 2%;
+}

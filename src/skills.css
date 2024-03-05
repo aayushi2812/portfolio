@@ -39,8 +39,24 @@
     height: 120px !important;
     width: 120px !important;
     opacity: 1;
+    animation: skills 3s;
+    -moz-animation: skills 3s;
+    -webkit-animation: skills 3s;
+    -o-animation: skills 3s;
 }
-.img:hover{
+
+@keyframes skills {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+.image-skills:hover{
     height: 80;
     width: 80;
     transition-duration: 0.3s;
@@ -51,21 +67,88 @@
     height: 20;
     width: 20;
 }
-.middle{
+.bottom{
     opacity: 0;
     transition: .5s ease;
     margin-top: 10%;
 }
-.btn:hover .middle {
+.btn:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+.btn:hover .bottom {
+    opacity: 1;
+  }
+
+  .top{
+    opacity: 0;
+    transition: .5s ease;
+}
+.btn:hover .top {
     opacity: 1;
   }
 .skills{
     margin-top: 5%;
+    /* background-color: #f5f5f5; */
+    padding-top: 7%;
+}
+.skills h1{
+    animation: headingMovement 3s infinite;
+    -moz-animation: headingMovement 3s;
+    -webkit-animation: headingMovement 3s;
+    -o-animation: headingMovement 3s;
+    animation-play-state: running;
 }
 .progress-bar{
-    width: 5%;
+    width: 15px;
+    height: 10px;
 }
 .row{
     align-items: center;
     justify-content: space-evenly;
 }
+.line1{
+    border-top: 3px solid #76453B;
+    width: 150px;
+    display: inline-flex;
+    justify-content: center;
+    animation: lineMovement 3s;
+    -moz-animation: lineMovement 3s;
+    -webkit-animation: lineMovement 3s;
+    -o-animation: lineMovement 3s;
+    animation-play-state: running !important;
+}
+@keyframes headingMovement {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes lineMovement {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .box {
+    width: 190px;
+    height: 200px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+                  -20px -20px 60px #ffffff;
+   }
+
+   

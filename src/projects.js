@@ -10,33 +10,38 @@ import "./projects.css";
 
 function projects() {
   return (
-    <div className="projects">
+    <div id="projects" className="projects">
       <h1>Projects</h1>
-      <div className="cards">
+      <div className="line2"></div>
+      <div className="row cards">
+        <div className="col">
         <Card sx={{ minWidth: 275 }} className="card">
           <CardContent className="content">
-            <img src="tcs.jpg" height={200} width={200} alt="tcs" />
+            <img src="/worldwise.png" alt="logo" height={300} width={400} className='logo' />
           </CardContent>
           <CardActions>
             {/* <Button size="small">Learn More</Button> */}
           </CardActions>
         </Card>
-        <Card sx={{ minWidth: 275 }} className="card">
+        </div>
+        <div className="col"><Card sx={{ minWidth: 275 }} className="card">
           <CardContent className="content">
-            <img src="tcs.jpg" height={200} width={200} alt="tcs" />
+          <img src="/worldwise.png" alt="logo" height={300} width={400} className='logo' />
           </CardContent>
           <CardActions>
             {/* <Button size="small">Learn More</Button> */}
           </CardActions>
         </Card>
-        <Card sx={{ minWidth: 275 }} className="card">
+        </div>
+        <div className="col"><Card sx={{ minWidth: 275 }} className="card">
           <CardContent className="content">
-            <img src="tcs.jpg" height={200} width={200} alt="tcs" />
+          <img src="/worldwise.png" alt="logo" height={300} width={400} className='logo' />
           </CardContent>
           <CardActions>
             {/* <Button size="small">Learn More</Button> */}
           </CardActions>
         </Card>
+        </div>
       </div>
     </div>
   )

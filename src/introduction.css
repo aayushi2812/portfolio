@@ -1,9 +1,9 @@
 .card-intro{
  border: none;   
  /* background-color: #F8FAE5 !important;  */
- height: 500px;
+ height: 600px;
  color: #76453B;
- margin-top: 5%;
+ padding-top: 5%;
  border-radius: 0;
  box-shadow: none !important;
 } 
@@ -20,12 +20,79 @@
 .card-intro h1{
     color: #76453B;
 }
+.animate-on-scroll {
+    animation: headingMovement 3s;
+    -moz-animation: headingMovement 3s;
+    -webkit-animation: headingMovement 3s;
+    -o-animation: headingMovement 3s;
+}
+
+.animate {
+    animation: headingMovement 3s;
+    -moz-animation: headingMovement 3s;
+    -webkit-animation: headingMovement 3s;
+    -o-animation: headingMovement 3s;
+}
 .intro-data{
     display: flex;
-    margin-top: 5%;
+    animation: myphoto 3s;
+    -moz-animation: myphoto 3s;
+    -webkit-animation: myphoto 3s;
+    -o-animation: myphoto 3s;
 }
 .imgStyle{
     border-radius: 50% !important;
+    animation: myphoto 3s;
+    -moz-animation: myphoto 3s;
+    -webkit-animation: myphoto 3s;
+    -o-animation: myphoto 3s;
 }
-.intro-text{
+.col-md-6{
+    padding-top: 5%;
 }
+.line{
+    border-top: 3px solid #76453B;
+    width: 220px;
+    display: inline-flex;
+    justify-content: center;
+    animation: lineMovement 3s;
+  -moz-animation: lineMovement 3s;
+  -webkit-animation: lineMovement 3s;
+  -o-animation: lineMovement 3s;
+}
+
+@keyframes headingMovement {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes lineMovement {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes myphoto {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }

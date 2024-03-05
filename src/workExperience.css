@@ -1,20 +1,106 @@
-.cardsExperience{
+.projectsE{
+    padding-top: 5%;
+}
+.projectsE h1{
+    animation: headingMovement 3s;
+    -moz-animation: headingMovement 3s;
+    -webkit-animation: headingMovement 3s;
+    -o-animation: headingMovement 3s;
+}
+.cardsE{
     display: flex;
     justify-content: space-around;
+    margin-top: 5%;
 }
-.cardExperience{
+.cardE{
     border: solid;
+    height: 500px;
+    width: 400px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
     background-color: #43766C !important;
-    color: #F8FAE5;
+    color: #F8FAE5 !important;
+    border-radius: 50px !important;
+    animation: skills 3s;
+    -moz-animation: skills 3s;
+    -webkit-animation: skills 3s;
+    -o-animation: skills 3s;
 }
-.contentExperience{
-    text-align: left;
-    padding: 0px;
-    color: #F8FAE5;
+.contentE{
+    text-align: center;
+    padding: 0px !important;
 }
-.contentFirstExperience{
+.Typography{
     text-align: center;
 }
-.textFirstExperience{
+.textFirst{
     margin-left: 15px !important;
 }
+
+.line3{
+    border-top: 3px solid #76453B;
+    width: 220px;
+    display: inline-flex;
+    justify-content: center;
+    animation: lineMovement 3s;
+    -moz-animation: lineMovement 3s;
+    -webkit-animation: lineMovement 3s;
+    -o-animation: lineMovement 3s;
+}
+.imageE{
+    height: 130px;
+    width: 130px;
+    margin: 15%;
+    border-radius: 10px;
+}
+.info{
+    padding-top: 10%;
+    width: 300px;
+    text-align: justify;
+}
+
+.cardsE:hover > .cardE:not(:hover) {
+    filter: blur(15px) !important;
+    transform: scale(0.9, 0.9);
+    transition: 0.3s ease;
+  }
+  .cardsE .cardE:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.3s ease;
+  }
+
+  @keyframes headingMovement {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes lineMovement {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes experience {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }

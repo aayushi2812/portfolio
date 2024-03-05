@@ -1,5 +1,11 @@
 .projects{
-    margin-top: 5%;
+    padding-top: 5%;
+}
+.projects h1{
+    animation: headingMovement 3s;
+    -moz-animation: headingMovement 3s;
+    -webkit-animation: headingMovement 3s;
+    -o-animation: headingMovement 3s;
 }
 .cards{
     display: flex;
@@ -8,10 +14,20 @@
 }
 .card{
     border: solid;
+    height: 300px;
+    width: 400px;
+    align-items: center;
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-between;
+    animation: skills 3s;
+    -moz-animation: skills 3s;
+    -webkit-animation: skills 3s;
+    -o-animation: skills 3s;
 }
 .content{
     text-align: center;
-    padding: 0px;
+    padding: 0px !important;
 }
 .Typography{
     text-align: center;
@@ -22,3 +38,57 @@
 .textFirst{
     margin-left: 15px !important;
 }
+.cards:hover > .card:not(:hover) {
+    filter: blur(15px) !important;
+    transform: scale(0.9, 0.9);
+    transition: 0.3s ease;
+  }
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.3s ease;
+  }
+
+.line2{
+    border-top: 3px solid #76453B;
+    width: 180px;
+    display: inline-flex;
+    justify-content: center;
+    animation: lineMovement 3s;
+    -moz-animation: lineMovement 3s;
+    -webkit-animation: lineMovement 3s;
+    -o-animation: lineMovement 3s;
+}
+@keyframes headingMovement {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes lineMovement {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes projects {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }

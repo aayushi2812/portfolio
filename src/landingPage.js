@@ -4,19 +4,21 @@ import Introduction from './introduction';
 import Skills from './skills';
 import Projects from './projects';
 import ContactMe from './contactMe';
-import { useEffect, useState } from 'react';
+import { forwardRef, useEffect, useRef, useState } from 'react';
 import { Collapse } from 'bootstrap';
 import { Box, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 
 function landingPage() {
+
   return (
-    <div className='elements'>
+    <div id='home' className='elements'>
       <section className='landingPage'>
         <HeaderBar />
         <div className='components'>
           <Introduction />
           <Skills />
         </div>
+        <WorkExperience />
         <Projects />
         <ContactMe />
       </section>
@@ -24,26 +26,60 @@ function landingPage() {
   )
 }
 
-function HeaderBar() {
-  const [open, setOpen] = useState(false);
+function HeaderBar() {  const [open, setOpen] = useState(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
+  };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const DrawerList = (
     <Box sx={{ width: '100%' }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
       <i class="bi bi-x" onClick={toggleDrawer(false)}></i>
-        {['About', 'Projects', 'Resume', 'Contact Me'].map((text, index) => (
-          <ListItem key={text}>
+        {/* {['About', 'Projects', 'Resume', 'Contact Me'].map((text, index) => ( */}
+          <ListItem key='About' onClick={() => scrollToSection("introduction")}>
             <ListItemButton>
               {/* <ListItemIcon>
               </ListItemIcon> */}
-              <ListItemText primary={text} />
+              <ListItemText primary='About' />
             </ListItemButton>
           </ListItem>
-        ))}
+          <ListItem key='Skills' onClick={() => scrollToSection("introduction")}>
+            <ListItemButton>
+              {/* <ListItemIcon>
+              </ListItemIcon> */}
+              <ListItemText primary='Skills' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem key='Experience' onClick={() => scrollToSection("introduction")}>
+            <ListItemButton>
+              {/* <ListItemIcon>
+              </ListItemIcon> */}
+              <ListItemText primary='Skills' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem key='Projects' onClick={() => scrollToSection("projects")}>
+            <ListItemButton>
+              {/* <ListItemIcon>
+              </ListItemIcon> */}
+              <ListItemText primary='Projects' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem key='Contact Me' onClick={() => scrollToSection("contactMe")}>
+            <ListItemButton>
+              {/* <ListItemIcon>
+              </ListItemIcon> */}
+              <ListItemText primary='Contact Me' />
+            </ListItemButton>
+          </ListItem>
+        {/* ))} */}
       </List>
     </Box>
   );
@@ -53,19 +89,22 @@ function HeaderBar() {
     <div className='container-fluid'>
       <div className='row header'>
         <nav className='nav'>
-          <img src="/A-teal.png" alt="logo" height={60} width={60} className='logo' />
+          <img src="/A-teal.png" alt="logo" height={60} width={60} className='logo' onClick={() => scrollToSection("home")}/>
           <div class='d-none d-md-block'>
             <ul>
-              <li>
+              <li onClick={() => scrollToSection("introduction")}>
                 About
               </li>
-              <li>
+              <li onClick={() => scrollToSection("skills")}>
+                Skills
+              </li>
+              <li onClick={() => scrollToSection("experience")}>
+                Experience
+              </li>
+              <li onClick={() => scrollToSection("projects")}>
                 Projects
               </li>
-              <li>
-                Resume
-              </li>
-              <li>
+              <li onClick={() => scrollToSection("contactMe")}>
                 Contact Me
               </li>
             </ul>
@@ -96,7 +135,11 @@ function HeaderBar() {
         </div><br />
         <div className='row'>
           <div class="col-xs-4 col-md-2"></div>
-          <div class="col-xs-10 col-md-8"><button class="btn btn-landing-page">View more about me</button></div>
+          <div class="col-xs-5 col-md-4"><button class="btn btn-landing-page" onClick={() => scrollToSection("introduction")}>
+            View more about me</button>
+            <a href={require("./AayushiParekh.pdf")} download="Aayushi Parekh - Resume" target="_blank"><button class="btn btn-landing-page">
+            Resume<i class="bi bi-download"></i></button></a>
+            </div>
           <div class="col-xs-4 col-md-2"></div>
         </div>
       </div>

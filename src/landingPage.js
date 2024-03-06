@@ -137,7 +137,7 @@ function HeaderBar() {  const [open, setOpen] = useState(false);
           <div class="col-xs-4 col-md-2"></div>
           <div class="col-xs-5 col-md-4"><button class="btn btn-landing-page" onClick={() => scrollToSection("introduction")}>
             View more about me</button>
-            <a href={require("./AayushiParekh.pdf")} download="Aayushi Parekh - Resume" target="_blank"><button class="btn btn-landing-page">
+            <a href={require("./AayushiParekh.pdf")} download="Aayushi Parekh - Resume" target="_blank" rel="noreferrer"><button class="btn btn-landing-page">
             Resume<i class="bi bi-download"></i></button></a>
             </div>
           <div class="col-xs-4 col-md-2"></div>

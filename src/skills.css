@@ -88,7 +88,6 @@
     opacity: 1;
   }
 .skills{
-    margin-top: 5%;
     /* background-color: #f5f5f5; */
     padding-top: 7%;
 }
@@ -117,6 +116,9 @@
     -webkit-animation: lineMovement 3s;
     -o-animation: lineMovement 3s;
     animation-play-state: running !important;
+}
+.skills-data{
+  padding-top: 3%;
 }
 @keyframes headingMovement {
     from {
@@ -151,4 +153,19 @@
                   -20px -20px 60px #ffffff;
    }
 
-   
+   @media screen and (max-width: 600px){
+    .btn-lg{
+      transform: scale(0.7);
+      margin: 0;
+    }
+    .btn-lg:hover{
+      transform: scale(1);
+    }
+    .box{
+      width: 150px;
+      height: 160px;
+    }.image-skills{
+      height: 90px !important;
+      width: 90px !important;
+    }
+   }

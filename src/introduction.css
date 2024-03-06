@@ -1,7 +1,7 @@
 .card-intro{
  border: none;   
  /* background-color: #F8FAE5 !important;  */
- height: 700px;
+ height: 600px;
  color: #76453B;
  padding-top: 5%;
  border-radius: 0;
@@ -39,6 +39,7 @@
     -moz-animation: myphoto 3s;
     -webkit-animation: myphoto 3s;
     -o-animation: myphoto 3s;
+    padding-top: 3%;
 }
 .imgStyle{
     border-radius: 50% !important;
@@ -47,8 +48,7 @@
     -webkit-animation: myphoto 3s;
     -o-animation: myphoto 3s;
 }
-.col-md-6{
-    padding-top: 5%;
+.intro-text{
 }
 .line{
     border-top: 3px solid #76453B;
@@ -94,5 +94,19 @@
     to {
       opacity: 1;
       transform: translateX(0px);
+    }
+  }
+  @media screen and (max-width: 600px){
+    .card-intro{
+      padding-top: 20%;
+      height: 900px;
+    }
+    .imgStyle{
+      height: 200 !important;
+      max-width: 200 !important;
+      padding-top: 1%;
+    }
+    .intro-text{
+      padding-top: 5%;
     }
   }

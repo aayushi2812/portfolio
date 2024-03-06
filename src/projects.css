@@ -25,6 +25,14 @@
     -webkit-animation: skills 3s;
     -o-animation: skills 3s;
 }
+@media screen and (max-width: 600px){
+  .card{
+    transform: scale(0.8);
+  }
+  .card:hover{
+    transform: scale(1);
+  }
+}
 .content{
     text-align: center;
     padding: 0px !important;

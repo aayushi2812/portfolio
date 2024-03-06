@@ -5,8 +5,8 @@ function skills() {
     <div id="skills" className="container-fluid skills">
       <h1>Skills</h1>
       <div className="line1"></div>
-      <div className="row">
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+      <div className="row skills-data">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             HTML
           </div>
@@ -16,7 +16,7 @@ function skills() {
           </div>
         </button>
         </div>
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             CSS
           </div>
@@ -26,7 +26,7 @@ function skills() {
           </div>
         </button>
         </div>
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             JavaScript
           </div>
@@ -36,7 +36,7 @@ function skills() {
           </div>
         </button>
         </div>
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             Angular
           </div>
@@ -46,7 +46,7 @@ function skills() {
           </div>
         </button>
         </div>
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             React
           </div>
@@ -56,9 +56,7 @@ function skills() {
           </div>
         </button>
         </div>
-      </div>
-      <div className="row">
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             Nodejs
           </div>
@@ -68,7 +66,7 @@ function skills() {
           </div>
         </button>
         </div>
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             Java
           </div>
@@ -78,7 +76,7 @@ function skills() {
           </div>
         </button>
         </div>
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             Spring
           </div>
@@ -88,7 +86,7 @@ function skills() {
           </div>
         </button>
         </div>
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             Python
           </div>
@@ -98,7 +96,7 @@ function skills() {
           </div>
         </button>
         </div>
-        <div className="col-md-5-cols"><button type="button" class="btn btn-lg box">
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box">
           <div class="top">
             MySQL
           </div>

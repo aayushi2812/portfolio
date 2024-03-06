@@ -175,3 +175,8 @@
 .content{
     margin-top: 2%;
 }
+@media screen and (max-width: 600px){
+  .bi-linkedIn .bi-github .bi-envelope{
+      font-size: 30px !important;
+  }
+}

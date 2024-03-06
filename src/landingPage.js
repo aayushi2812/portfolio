@@ -9,7 +9,7 @@ import { Collapse } from 'bootstrap';
 import { Box, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 
 function landingPage() {
-
+  // const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <div id='home' className='elements'>
       <section className='landingPage'>
@@ -125,12 +125,15 @@ function HeaderBar() {  const [open, setOpen] = useState(false);
       <div className='intro'>
         <div className='row'>
           <div class="col-xs-4 col-md-2"></div>
-          <div class="col-xs-10 col-md-8"><p className='text-first'>Hi, I am <span className='text-second'>Aayushi Parekh</span></p></div>
+          <div class="col-xs-10 col-md-8">
+            <p className='text-first'>Hi, I am <p className='text-second1'>Aayushi Parekh</p> 
+            </p>
+          </div>
           <div class="col-xs-4 col-md-2"></div>
         </div><br />
         <div className='row'>
           <div class="col-xs-4 col-md-2"></div>
-          <div class="col-xs-10 col-md-8"><p className='text-second'>A  Full Stack Developer</p></div>
+          <div class="col-xs-10 col-md-8"><p className='text-second2'>A  Full Stack Developer</p></div>
           <div class="col-xs-4 col-md-2"></div>
         </div><br />
         <div className='row'>

@@ -1,7 +1,11 @@
 .app {
   text-align: center;
   font-family: 'TAN Mon Cheri';
-  color: #76453B;
+  /* color: #76453B; */
+  /* color: #CBE4DE; */
+  /* background-color: #2E4F4F; */
+  width: 100%;
+  overflow-x: hidden;
 }
 .components{
   height: fit-content;

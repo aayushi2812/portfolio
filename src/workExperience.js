@@ -8,14 +8,14 @@ import {
 } from "@mui/material";
 import "./workExperience.css";
 
-function workExperience() {
+function workExperience({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
   return (
-    <div id="experience" className="projectsE">
-      <h1>Experience</h1>
-      <div className="line3"></div>
+    <div id="experience" className="experience" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: "white" }}>
+      <h1 style={toggleDarkMode ? { color: quaternary } : { color: secondary }}>Experience</h1>
+      <div className="line3" style={toggleDarkMode ? {borderTop: `3px solid ${quaternary}`} : {borderTop: `3px solid ${secondary}`}}></div>
       <div className="row cardsE">
         <div className="col">
-          <Card sx={{ minWidth: 275 }} className="cardE">
+          <Card sx={{ minWidth: 275 }} className="cardE" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
             <CardContent className="contentE">
               <div className="contentFirstExperience">
               <img src="tcs.jpg" height={70} width={70} alt="tcs" className="imageE"/>
@@ -35,7 +35,7 @@ function workExperience() {
         </div>
 
         <div className="col">
-          <Card sx={{ minWidth: 275 }} className="cardE">
+          <Card sx={{ minWidth: 275 }} className="cardE" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
             <CardContent className="contentE">
               <div className="contentFirstExperience">
               <img src="ssm.jpg" height={70} width={70} alt="ssm" className="imageE"/>
@@ -56,7 +56,7 @@ function workExperience() {
         </div>
 
         <div className="col">
-          <Card sx={{ minWidth: 275 }} className="cardE">
+          <Card sx={{ minWidth: 275 }} className="cardE" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
             <CardContent className="contentE">
               <div className="contentFirstExperience">
                 <img src="fgrade.jpg" height={70} width={70} alt="fgrade" className="imageE"/>

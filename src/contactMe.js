@@ -2,7 +2,7 @@ import { Card, CardContent } from "@mui/material";
 import './contactMe.css';
 import { Button } from "bootstrap";
 import { useState } from "react";
-function ContactMe() {
+function ContactMe({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleChange = (event) => {
@@ -26,9 +26,9 @@ function ContactMe() {
 
   return (
     <div id="contactMe" className="contactMeCard">
-      <Card className="contactMe-card-intro">
-        <h1>Contact Me</h1>
-        <div className="line4"></div>
+      <Card className="contactMe-card-intro" style={toggleDarkMode ? { backgroundColor: primary } : { backgroundColor: primary }}>
+        <h1 style={toggleDarkMode ? { color: quaternary } : { color: quaternary }}>Contact Me</h1>
+        <div className="line4" style={toggleDarkMode ? {borderTop: `3px solid ${quaternary}`} : {borderTop: `3px solid ${quaternary}`}}></div>
         <CardContent className="content">
           {/* <h5>Have a question or want to work together?</h5>
           <form className="form" onSubmit={handleSubmit}>
@@ -37,11 +37,11 @@ function ContactMe() {
             <input className='inputTagMessage' name="message" type="text" id="message" value={formData.message0} onChange={handleChange} placeholder="Message" required></input><br />
             <button class="btn submitButton" type="submit">Submit</button>
           </form> */}
-          <a className="a-tag" href="https://www.linkedin.com/in/aayushi-parekh-08426a181/"><i class="bi bi-linkedin"></i></a>
-          <a className="a-tag" href="https://github.com/aayushi2812"><i class="bi bi-github"></i></a>
-          <a className="a-tag" href="mailto:aayushiparekh2812@gmail.com"><i class="bi bi-envelope"></i></a>
+          <a className="a-tag" onMouseEnter={(e) => {e.target.style.color=secondary}} onMouseLeave={(e) => {e.target.style.color=quaternary}} style={{color: quaternary}} href="https://www.linkedin.com/in/aayushi-parekh-08426a181/"><i class="bi bi-linkedin"></i></a>
+          <a className="a-tag" onMouseEnter={(e) => {e.target.style.color=secondary}} onMouseLeave={(e) => {e.target.style.color=quaternary}} style={{color: quaternary}} href="https://github.com/aayushi2812"><i class="bi bi-github"></i></a>
+          <a className="a-tag" onMouseEnter={(e) => {e.target.style.color=secondary}} onMouseLeave={(e) => {e.target.style.color=quaternary}} style={{color: quaternary}} href="mailto:aayushiparekh2812@gmail.com"><i class="bi bi-envelope"></i></a>
           <div className="backontop" onClick={() => scrollToSection("home")}>
-            <button class="button buttontotop">
+            <button class="button buttontotop" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: secondary }} onMouseEnter={(e) => {e.target.style.backgroundColor=primary}} onMouseLeave={(e) => {e.target.style.backgroundColor=secondary}}>
               <svg class="svgIcon" viewBox="0 0 384 512">
                 <path
                   d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"

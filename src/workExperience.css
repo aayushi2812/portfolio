@@ -1,7 +1,8 @@
-.projectsE{
+.experience{
     padding-top: 5%;
+    /* background-color: #2E4F4F !important; */
 }
-.projectsE h1{
+.experience h1{
     animation: headingMovement 3s;
     -moz-animation: headingMovement 3s;
     -webkit-animation: headingMovement 3s;
@@ -19,8 +20,9 @@
     display: inline-flex;
     text-align: center;
     justify-content: center;
-    background-color: #43766C !important;
-    color: #F8FAE5 !important;
+    /* background-color: #43766C !important; */
+    /* background-color: #2C3333 !important;
+    color: #F8FAE5 !important; */
     border-radius: 50px !important;
     animation: skills 3s;
     -moz-animation: skills 3s;
@@ -47,7 +49,8 @@
 }
 
 .line3{
-    border-top: 3px solid #76453B;
+    /* border-top: 3px solid #76453B; */
+    /* border-top: 3px solid #CBE4DE; */
     width: 220px;
     display: inline-flex;
     justify-content: center;
@@ -68,13 +71,8 @@
     text-align: justify;
 }
 
-.cardsE:hover > .cardE:not(:hover) {
-    filter: blur(15px) !important;
-    transform: scale(0.9, 0.9);
-    transition: 0.3s ease;
-  }
   .cardsE .cardE:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05);
     transition: 0.3s ease;
   }
 
@@ -111,4 +109,9 @@
       opacity: 1;
       transform: translateX(0px);
     }
+  }
+  @media screen and (max-width: 600px){
+    .experience{
+      padding-top: 20%;
+  }
   }

@@ -2,7 +2,7 @@ import { Card, CardContent } from "@mui/material";
 import "./introduction.css";
 import { useEffect } from "react";
 
-function introduction() {
+function introduction({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
   // const observer = new IntersectionObserver(intersections => {
   //   intersections.forEach(({
   //     target,
@@ -53,17 +53,17 @@ function introduction() {
 
   return (
     <div className="introduction animate-on-scroll" id="introduction">
-      <Card className="card-intro">
+      <Card className="card-intro" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: "white"  }}>
         <CardContent className="animate-on-scroll">
-        <h1>Introduction</h1>
-        <div className="line"></div>
+        <h1 style={toggleDarkMode ? { color: quaternary } : { color: secondary }}>Introduction</h1>
+        <div className="line" style={toggleDarkMode ? {borderTop: `3px solid ${quaternary}`} : {borderTop: `3px solid ${secondary}`}}></div>
           <div className="container-fluid intro-data">
             <div className="row">
               <div class="col-md-6">
                 <img src='/profile.jpg' className="imgStyle" alt='profile' height={300} width={300} />
               </div>
               <div class="col-md-6 intro-text animate-on-scroll">
-                <p>
+                <p style={toggleDarkMode ? { color: quaternary } : { color: secondary }}>
                   A dedicated Software Developer with more than three years of
                   experience specializing in the development of robust banking
                   applications and systems with expertise in both front-end and

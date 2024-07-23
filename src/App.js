@@ -7,16 +7,16 @@ import { createContext, useMemo, useState } from 'react';
 const lightTheme = createTheme({
   palette: {
     primary: {
-      main: '#43766C',
+      main: '#FFFFFF',
     },
     secondary: {
-      main: '#76453B',
+      main: '#F8EDE3',
     },
     tertiary: {
-      main: '#B19470',
+      main: '#8D493A',
     },
     quaternary: {
-      main: '#F8FAE5',
+      main: '#2C3333',
     }
   },
 });
@@ -28,28 +28,28 @@ function App() {
     palette: { //default theme
       mode: toggleDarkMode ? 'dark' : 'light',
       primary: {
-        main: '#2C3333',
+        main: '#17153B',
       },
       secondary: {
-        main: '#2E4F4F',
+        main: '#435585',
       },
       tertiary: {
-        main: '#0E8388',
+        main: '#435585',
       },
       quaternary: {
-        main: '#CBE4DE',
+        main: '#FFFFFF',
       }
     },
   });
-  const [theme, setTheme] = useState(darkTheme);
+  const [theme, setTheme] = useState(lightTheme);
   
   const toggleDarkTheme = () => {
     setToggleDarkMode(!toggleDarkMode);
     if(toggleDarkMode == true){
-      setTheme(lightTheme)
+      setTheme(darkTheme)
     }
     else{
-      setTheme(darkTheme)
+      setTheme(lightTheme)
     }
   };
 

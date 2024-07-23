@@ -1,114 +1,146 @@
-.card-intro{
- border: none;   
- /* background-color: #2E4F4F !important;  */
- height: 600px;
- padding-top: 5%;
- border-radius: 0;
- box-shadow: none !important;
-} 
-.card-intro p{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: justify;
-    /* color: #76453B; */
-    /* color: #CBE4DE; */
-    font-size: 18px;
+.card-intro {
+  border: none;
+  /* background-color: #2E4F4F !important;  */
+  height: 800px;
+  padding-top: 5%;
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+.card-intro p {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+  /* color: #76453B; */
+  /* color: #CBE4DE; */
+  font-size: 18px;
 
 }
-.card-intro h1{
-    /* color: #76453B; */
-    /* color: #CBE4DE; */
+
+.card-intro h1 {
+  /* color: #76453B; */
+  /* color: #CBE4DE; */
 }
+
+.there {
+  font-size: 30px;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 5%;
+}
+
 .animate-on-scroll {
-    animation: headingMovement 3s;
-    -moz-animation: headingMovement 3s;
-    -webkit-animation: headingMovement 3s;
-    -o-animation: headingMovement 3s;
+  animation: headingMovement 3s;
+  -moz-animation: headingMovement 3s;
+  -webkit-animation: headingMovement 3s;
+  -o-animation: headingMovement 3s;
 }
 
 .animate {
-    animation: headingMovement 3s;
-    -moz-animation: headingMovement 3s;
-    -webkit-animation: headingMovement 3s;
-    -o-animation: headingMovement 3s;
+  animation: headingMovement 3s;
+  -moz-animation: headingMovement 3s;
+  -webkit-animation: headingMovement 3s;
+  -o-animation: headingMovement 3s;
 }
-.intro-data{
-    display: flex;
-    animation: myphoto 3s;
-    -moz-animation: myphoto 3s;
-    -webkit-animation: myphoto 3s;
-    -o-animation: myphoto 3s;
-    padding-top: 3%;
+
+.intro-data {
+  display: flex;
+  animation: myphoto 3s;
+  -moz-animation: myphoto 3s;
+  -webkit-animation: myphoto 3s;
+  -o-animation: myphoto 3s;
+  padding-top: 3%;
 }
-.imgStyle{
-    border-radius: 50% !important;
-    animation: myphoto 3s;
-    -moz-animation: myphoto 3s;
-    -webkit-animation: myphoto 3s;
-    -o-animation: myphoto 3s;
+
+.imgStyle {
+  height: 500px;
+  width: 400px;
+  border-radius: 10% !important;
+  animation: myphoto 3s;
+  -moz-animation: myphoto 3s;
+  -webkit-animation: myphoto 3s;
+  -o-animation: myphoto 3s;
 }
-.intro-text{
-}
-.line{
-    /* border-top: 3px solid #76453B; */
-    border-top: 3px solid #CBE4DE;
-    width: 220px;
-    display: inline-flex;
-    justify-content: center;
-    animation: lineMovement 3s;
+
+.line {
+  /* border-top: 3px solid #76453B; */
+  border-top: 3px solid #CBE4DE;
+  width: 220px;
+  display: inline-flex;
+  justify-content: center;
+  animation: lineMovement 3s;
   -moz-animation: lineMovement 3s;
   -webkit-animation: lineMovement 3s;
   -o-animation: lineMovement 3s;
 }
 
 @keyframes headingMovement {
-    from {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
   }
 
-  @keyframes lineMovement {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes lineMovement {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
 
-  @keyframes myphoto {
-    from {
-      opacity: 0;
-      transform: translateX(100px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
-  @media screen and (max-width: 750px){
-    .card-intro{
-      padding-top: 20%;
-      height: 900px;
-    }
-    .imgStyle{
-      height: 200 !important;
-      max-width: 200 !important;
-      padding-top: 1%;
-    }
-    .intro-text{
-      padding-top: 5%;
-    }
+}
+
+@keyframes myphoto {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
   }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card-intro {
+    padding-top: 20%;
+    height: 950px;
+  }
+
+  .imgStyle {
+    height: 300px !important;
+    max-width: 200px !important;
+    padding-top: 1%;
+  }
+
+  .intro-text {
+    padding-top: 5%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .card-intro {
+    padding-top: 20%;
+    height: 1050px;
+  }
+
+  .imgStyle {
+    height: 350px !important;
+    max-width: 250px !important;
+    padding-top: 1%;
+  }
+
+  .intro-text {
+    padding-top: 5%;
+  }
+}

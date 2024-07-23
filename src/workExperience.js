@@ -8,9 +8,9 @@ import {
 } from "@mui/material";
 import "./workExperience.css";
 
-function workExperience({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
+function WorkExperience({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
   return (
-    <div id="experience" className="experience" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: "white" }}>
+    <div id="workExperience" className="experience" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: "white" }}>
       <h1 style={toggleDarkMode ? { color: quaternary } : { color: secondary }}>Experience</h1>
       <div className="line3" style={toggleDarkMode ? {borderTop: `3px solid ${quaternary}`} : {borderTop: `3px solid ${secondary}`}}></div>
       <div className="row cardsE">
@@ -47,7 +47,7 @@ function workExperience({toggleDarkMode, primary, secondary, tertiary, quaternar
                   May 2019 - June 2019
                 </Typography>
                 <Typography sx={{ mb:2 }} gutterBottom className="info">
-                Hands-on experience in developing dynamic and responsive web applications using ASP.NET.
+                Hands-on experience in developing responsive UX product using ASP.NET and learning best practices in development.
 
                 </Typography>
               </div>
@@ -68,7 +68,7 @@ function workExperience({toggleDarkMode, primary, secondary, tertiary, quaternar
                 Oct 2017 - Feb 2018
                 </Typography>
                 <Typography sx={{ mb:2 }} gutterBottom className="info">
-                Authored compelling articles, and website content on various technical topics like AI, SEO etc.
+                Authored compelling articles, and website content on various technical topics like AI, ML, SEO etc.
                 </Typography>
               </div>
             </CardContent>
@@ -80,4 +80,4 @@ function workExperience({toggleDarkMode, primary, secondary, tertiary, quaternar
   );
 }
 
-export default workExperience;
+export default WorkExperience;

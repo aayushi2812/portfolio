@@ -16,6 +16,9 @@
     font-size: 50px;
     padding: 3%;
 }
+.question{
+  padding-bottom: 30px;
+}
 .a-tag:hover {
     /* color: #76453B !important; */
     transition-duration: .3s;

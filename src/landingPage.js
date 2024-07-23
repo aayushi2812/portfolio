@@ -70,11 +70,11 @@ function HeaderBar({ toggleDarkMode, primary, secondary, tertiary, quaternary, t
             <ListItemText primary='Skills' />
           </ListItemButton>
         </ListItem>
-        <ListItem key='Experience' onClick={() => scrollToSection("experience")}>
+        <ListItem key='WorkExperience' onClick={() => scrollToSection("workExperience")}>
           <ListItemButton>
             {/* <ListItemIcon>
               </ListItemIcon> */}
-            <ListItemText primary='Experience' />
+            <ListItemText primary='WorkExperience' />
           </ListItemButton>
         </ListItem>
         <ListItem key='Projects' onClick={() => scrollToSection("projects")}>
@@ -101,33 +101,33 @@ function HeaderBar({ toggleDarkMode, primary, secondary, tertiary, quaternary, t
       <div className='row header'>
         <nav className='nav' style={{ backgroundColor: primary, color: quaternary, borderColor: secondary, borderBottom: '3px solid #CBE4DE' }}>
           <img src={toggleDarkMode ? "/A-db.jpg" : "/A-teal.png"} alt="logo" height={60} width={60} className='logo' onClick={() => scrollToSection("home")} />
-          <div class='d-none d-md-block'>
+          <div class='d-none d-lg-block'>
             <ul>
-              <li onClick={() => scrollToSection("introduction")}>
+              <li onClick={() => document.getElementById('introduction').scrollIntoView({block: 'start' })}>
                 About
               </li>
-              <li onClick={() => scrollToSection("skills")}>
+              <li onClick={() => document.getElementById('skills').scrollIntoView({block: 'start' })}>
                 Skills
               </li>
-              <li onClick={() => scrollToSection("experience")}>
+              <li onClick={() => document.getElementById('workExperience').scrollIntoView({block: 'start' })}>
                 Experience
               </li>
-              <li onClick={() => scrollToSection("projects")}>
+              <li onClick={() => document.getElementById('projects').scrollIntoView({block: 'start' })}>
                 Projects
               </li>
-              <li onClick={() => scrollToSection("contactMe")}>
+              <li onClick={() => document.getElementById('contactMe').scrollIntoView({ block: 'start' })}>
                 Contact Me
               </li>
               <li>
                 <IconButton sx={{ ml: 1 }} onClick={toggleDarkTheme} color="inherit">
-                  {theme.palette.mode === 'dark' ? <Brightness7Rounded style={{fontSize: '30px'}}/> : <Brightness4Rounded style={{fontSize: '30px'}}/>}
+                  {theme.palette.mode === 'dark' ? <Brightness7Rounded style={{ fontSize: '30px' }} /> : <Brightness4Rounded style={{ fontSize: '30px' }} />}
                 </IconButton>
               </li>
             </ul>
           </div>
-          <div class='d-md-none d-xs-block' style={{display: 'flex'}}>
+          <div class='d-lg-none' style={{ display: 'flex' }}>
             <IconButton sx={{ ml: 1 }} onClick={toggleDarkTheme} color="inherit">
-              {theme.palette.mode === 'dark' ? <Brightness7Rounded style={{fontSize: '40px'}}/> : <Brightness4Rounded style={{fontSize: '40px'}}/>}
+              {theme.palette.mode === 'dark' ? <Brightness7Rounded style={{ fontSize: '40px' }} /> : <Brightness4Rounded style={{ fontSize: '40px' }} />}
             </IconButton>
             <label class="burger" for="burger" onClick={toggleDrawer(true)}>
               <input type="checkbox" id="burger" />
@@ -136,34 +136,31 @@ function HeaderBar({ toggleDarkMode, primary, secondary, tertiary, quaternary, t
               <span style={toggleDarkMode ? { background: quaternary } : { background: quaternary }}></span>
             </label>
           </div>
-          <Drawer anchor='top' open={open} style={{backgroundColor: secondary}}>
+          <Drawer anchor='top' open={open} style={{ backgroundColor: secondary }}>
             {DrawerList}
           </Drawer>
         </nav>
       </div>
       <div className='intro' style={{ backgroundColor: primary, color: quaternary }}>
-        <div className='row'>
-          <div class="col-xs-4 col-md-2"></div>
-          <div class="col-xs-10 col-md-8">
-            <p className='text-first'>Hi, I am <p className='text-second1'>Aayushi Parekh</p>
-            </p>
+        <div>
+          <div className='content-block'>
+            <div>
+              <p className='text-first'>Hello, I am <p className='text-second1'>Aayushi Parekh</p>
+              </p>
+            </div>
+          </div><br />
+          <div>
+            <div style={{ display: 'flex' }}>
+              <button class="btn btn-landing-page" onMouseOver={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary; e.target.style.borderColor = quaternary }} style={{ backgroundColor: quaternary, color: secondary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} onClick={() => scrollToSection("introduction")}>
+              View more about me</button>
+              <a href={require("./AayushiParekh.pdf")} download="Aayushi Parekh - Resume" target="_blank" rel="noreferrer">
+                <button class="btn btn-landing-page" onMouseOver={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary; e.target.style.borderColor = quaternary }} onMouseEnter={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} style={{ backgroundColor: quaternary, color: secondary }}>
+                  Resume<i class="bi bi-download"></i></button></a>
+            </div>
           </div>
-          <div class="col-xs-4 col-md-2"></div>
-        </div><br />
-        <div className='row'>
-          <div class="col-xs-4 col-md-2"></div>
-          <div class="col-xs-10 col-md-8"><p className='text-second2'>A  Full Stack Developer</p></div>
-          <div class="col-xs-4 col-md-2"></div>
-        </div><br />
-        <div className='row'>
-          <div class="col-xs-4 col-md-2"></div>
-          <div class="col-xs-5 col-md-4"><button class="btn btn-landing-page" onMouseOver={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary }} style={{ backgroundColor: quaternary, color: secondary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} onClick={() => scrollToSection("introduction")}>
-            View more about me</button>
-            <a href={require("./AayushiParekh.pdf")} download="Aayushi Parekh - Resume" target="_blank" rel="noreferrer">
-              <button class="btn btn-landing-page" onMouseEnter={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} style={{ backgroundColor: quaternary, color: secondary }}>
-                Resume<i class="bi bi-download"></i></button></a>
-          </div>
-          <div class="col-xs-4 col-md-2"></div>
+        </div>
+        <div>
+          <img src="/coding.jpg" alt="logo" className='coding' />
         </div>
       </div>
     </div>

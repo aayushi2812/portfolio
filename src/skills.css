@@ -73,7 +73,7 @@
     margin-top: 10%;
 }
 .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.3s ease;
 }
 .btn:hover .bottom {
@@ -81,12 +81,12 @@
   }
 
   .top{
-    opacity: 0;
-    transition: .5s ease;
+    /* opacity: 0; */
+    /* transition: .5s ease; */
     /* color: #CBE4DE; */
 }
 .btn:hover .top {
-    opacity: 1;
+    /* opacity: 1; */
   }
 .skills{
     /* background-color: #f5f5f5; */

@@ -20,9 +20,6 @@
     display: inline-flex;
     text-align: center;
     justify-content: center;
-    /* background-color: #43766C !important; */
-    /* background-color: #2C3333 !important;
-    color: #F8FAE5 !important; */
     border-radius: 50px !important;
     animation: skills 3s;
     -moz-animation: skills 3s;

@@ -1,6 +1,5 @@
 .card-intro {
   border: none;
-  /* background-color: #2E4F4F !important;  */
   height: 800px;
   padding-top: 5%;
   border-radius: 0;
@@ -13,15 +12,11 @@
   padding-left: 10%;
   padding-right: 10%;
   text-align: justify;
-  /* color: #76453B; */
-  /* color: #CBE4DE; */
   font-size: 18px;
 
 }
 
 .card-intro h1 {
-  /* color: #76453B; */
-  /* color: #CBE4DE; */
 }
 
 .there {
@@ -65,7 +60,6 @@
 }
 
 .line {
-  /* border-top: 3px solid #76453B; */
   border-top: 3px solid #CBE4DE;
   width: 220px;
   display: inline-flex;
@@ -111,23 +105,6 @@
     transform: translateX(0px);
   }
 }
-
-@media screen and (max-width: 750px) {
-  .card-intro {
-    padding-top: 20%;
-    height: 950px;
-  }
-
-  .imgStyle {
-    height: 300px !important;
-    max-width: 200px !important;
-    padding-top: 1%;
-  }
-
-  .intro-text {
-    padding-top: 5%;
-  }
-}
 @media screen and (max-width: 900px) {
   .card-intro {
     padding-top: 20%;
@@ -137,6 +114,22 @@
   .imgStyle {
     height: 350px !important;
     max-width: 250px !important;
+    padding-top: 1%;
+  }
+
+  .intro-text {
+    padding-top: 5%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .card-intro {
+    padding-top: 20%;
+    height: 1200px;
+  }
+
+  .imgStyle {
+    height: 300px !important;
+    max-width: 200px !important;
     padding-top: 1%;
   }
 

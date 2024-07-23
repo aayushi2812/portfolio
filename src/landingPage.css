@@ -42,6 +42,11 @@
   padding-top: 6%;
 }
 
+.listItemText{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  
+}
+
 .coding {
   height: 400px;
   width: 400px ;

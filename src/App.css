@@ -1,9 +1,6 @@
 .app {
   text-align: center;
-  font-family: 'TAN Mon Cheri';
-  /* color: #76453B; */
-  /* color: #CBE4DE; */
-  /* background-color: #2E4F4F; */
+  font-family:'Times New Roman', Times, serif;
   width: 100%;
   overflow-x: hidden;
 }

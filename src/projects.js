@@ -17,7 +17,7 @@ function Projects({ toggleDarkMode, primary, secondary, tertiary, quaternary }) 
         <div className="col">
           <Card sx={{ minWidth: 275 }} className="card" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
             <CardContent className="content">
-              <img src="/techdotcare.png" alt="logo" height={250} width={370} className='logo' />
+              <img src="/techdotcare.png" alt="logo" className='projectImage' />
               <p className="details">
               Introducing TechdotCare – a tool that enables healthcare professionals to seamlessly access patient information, 
               including diagnostic history, a list of diagnoses and their current status, lab results, and contact information.
@@ -32,7 +32,7 @@ function Projects({ toggleDarkMode, primary, secondary, tertiary, quaternary }) 
         </div>
         <div className="col"><Card sx={{ minWidth: 275 }} className="card" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
           <CardContent className="content">
-            <img src="/todo.png" alt="logo" height={250} width={370} className='logo' />
+            <img src="/todo.png" alt="logo" className='projectImage' />
             <p className="details">
               Introducing ToDoQuarry - a Todo list application using CRUD operations where we can read, create, update and delete our tasks.
               <br /><br />
@@ -46,7 +46,7 @@ function Projects({ toggleDarkMode, primary, secondary, tertiary, quaternary }) 
         </div>
         <div className="col"><Card sx={{ minWidth: 275 }} className="card" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
           <CardContent className="content">
-            <img src="/worldwise.png" alt="logo" height={250} width={370} className='logo' />
+            <img src="/worldwise.png" alt="logo" className='projectImage' />
             <p className="details">
             Embark on a journey like never before with WorldWise, your ultimate travel companion designed to keep track of your adventures and the places you've visited.
             <br/><br/>

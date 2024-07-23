@@ -60,35 +60,35 @@ function HeaderBar({ toggleDarkMode, primary, secondary, tertiary, quaternary, t
           <ListItemButton>
             {/* <ListItemIcon>
               </ListItemIcon> */}
-            <ListItemText primary='About' />
+            <ListItemText className='listItemText' primary='About' />
           </ListItemButton>
         </ListItem>
         <ListItem key='Skills' onClick={() => scrollToSection("skills")}>
           <ListItemButton>
             {/* <ListItemIcon>
               </ListItemIcon> */}
-            <ListItemText primary='Skills' />
+            <ListItemText className='listItemText' primary='Skills' />
           </ListItemButton>
         </ListItem>
         <ListItem key='WorkExperience' onClick={() => scrollToSection("workExperience")}>
           <ListItemButton>
             {/* <ListItemIcon>
               </ListItemIcon> */}
-            <ListItemText primary='WorkExperience' />
+            <ListItemText className='listItemText' primary='Work Experience' />
           </ListItemButton>
         </ListItem>
         <ListItem key='Projects' onClick={() => scrollToSection("projects")}>
           <ListItemButton>
             {/* <ListItemIcon>
               </ListItemIcon> */}
-            <ListItemText primary='Projects' />
+            <ListItemText className='listItemText' primary='Projects' />
           </ListItemButton>
         </ListItem>
         <ListItem key='Contact Me' onClick={() => scrollToSection("contactMe")}>
           <ListItemButton>
             {/* <ListItemIcon>
               </ListItemIcon> */}
-            <ListItemText primary='Contact Me' />
+            <ListItemText className='listItemText' primary='Contact Me' />
           </ListItemButton>
         </ListItem>
         {/* ))} */}
@@ -100,7 +100,7 @@ function HeaderBar({ toggleDarkMode, primary, secondary, tertiary, quaternary, t
     <div className='container-fluid'>
       <div className='row header'>
         <nav className='nav' style={{ backgroundColor: primary, color: quaternary, borderColor: secondary, borderBottom: '3px solid #CBE4DE' }}>
-          <img src={toggleDarkMode ? "/A-db.jpg" : "/A-teal.png"} alt="logo" height={60} width={60} className='logo' onClick={() => scrollToSection("home")} />
+          <img src={toggleDarkMode ? "/Alight.png" : "/Adark.png"} alt="logo" height={60} width={60} className='logo' onClick={() => scrollToSection("home")} />
           <div class='d-none d-lg-block'>
             <ul>
               <li onClick={() => document.getElementById('introduction').scrollIntoView({block: 'start' })}>

@@ -81,16 +81,10 @@
   }
 
   .top{
-    /* opacity: 0; */
-    /* transition: .5s ease; */
-    /* color: #CBE4DE; */
 }
 .btn:hover .top {
-    /* opacity: 1; */
   }
 .skills{
-    /* background-color: #f5f5f5; */
-    /* background-color: #2E4F4F; */
     padding-top: 7%;
 }
 .skills h1{
@@ -109,8 +103,6 @@
     justify-content: space-evenly;
 }
 .line1{
-    /* border-top: 3px solid #76453B; */
-    /* border-top: 3px solid #CBE4DE; */
     width: 150px;
     display: inline-flex;
     justify-content: center;
@@ -151,8 +143,6 @@
     width: 190px;
     height: 200px;
     border-radius: 50px;
-    /* background: #e0e0e0; */
-    /* background-color: #2C3333; */
    }
 
    @media screen and (max-width: 600px){

@@ -34,13 +34,14 @@
   -moz-animation: skills 3s;
   -webkit-animation: skills 3s;
   -o-animation: skills 3s;
-  /* margin: 3%;
-  padding-right: 15%;
-  padding-left: 15%; */
 }
 .cards .card:hover {
   /* transform: scale(1.05) !important; */
   transition: 0.3s ease; 
+}
+.col{
+  align-items: center;
+  display: contents;
 }
 
 .content {
@@ -53,6 +54,11 @@
   text-align: center;
 }
 
+.projectImage{
+  height:250px; 
+  width:370px;
+}
+
 .contentFirst {}
 
 .textFirst {
@@ -60,13 +66,10 @@
 }
 
 .cards .card:hover {
-  /* transform: scale(1.05, 1.05); */
   transition: 0.3s ease;
 }
 
 .line2 {
-  /* border-top: 3px solid #76453B; */
-  /* border-top: 3px solid #CBE4DE; */
   width: 180px;
   display: inline-flex;
   justify-content: center;
@@ -137,6 +140,10 @@
   .projects {
     padding-top: 20%;
     height: 1800px !important;
+  }
+  .projectImage{
+    height:200px; 
+    width:320px;
   }
   .card{
     transform: scale(0.8);

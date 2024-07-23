@@ -1,116 +1,123 @@
-.experience{
-    padding-top: 5%;
+.experience {
+  padding-top: 5%;
 }
-.experience h1{
-    animation: headingMovement 3s;
-    -moz-animation: headingMovement 3s;
-    -webkit-animation: headingMovement 3s;
-    -o-animation: headingMovement 3s;
+
+.experience h1 {
+  /* animation: headingMovement 3s; */
+  /* -moz-animation: headingMovement 3s; */
+  /* -webkit-animation: headingMovement 3s; */
+  /* -o-animation: headingMovement 3s; */
 }
-.cardsE{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
-    /* margin-right: 20%; */
+
+.cardsE {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  /* margin-right: 20%; */
 }
-.col{
+
+.col {
   align-items: center;
   display: contents;
 }
-.cardE{
-    border: solid;
-    height: 500px;
-    width: 400px;
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
-    border-radius: 50px !important;
-    animation: skills 3s;
-    -moz-animation: skills 3s;
-    -webkit-animation: skills 3s;
-    -o-animation: skills 3s;
+
+.cardE {
+  border: solid;
+  height: 500px;
+  width: 400px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50px !important;
+  /* animation: skills 3s; */
+  /* -moz-animation: skills 3s; */
+  /* -webkit-animation: skills 3s; */
+  /* -o-animation: skills 3s; */
 }
-@media screen and (max-width: 600px){
-  .cardE{
+.cardsE .cardE:hover {
+  /* transform: scale(1.05); */
+  /* transition: 0.3s ease; */
+}
+
+@media screen and (max-width: 600px) {
+  .cardE {
     transform: scale(0.8);
   }
-  .cardE:hover{
-    transform: scale(1);
+
+  .cardE:hover {
+    /* transform: none !important; */
   }
-}
-.contentE{
-    text-align: center;
-    padding: 0px !important;
-}
-.Typography{
-    text-align: center;
-}
-.textFirst{
-    margin-left: 15px !important;
 }
 
-.line3{
-    width: 220px;
-    display: inline-flex;
-    justify-content: center;
-    animation: lineMovement 3s;
-    -moz-animation: lineMovement 3s;
-    -webkit-animation: lineMovement 3s;
-    -o-animation: lineMovement 3s;
-}
-.imageE{
-    height: 130px;
-    width: 130px;
-    margin: 15%;
-    border-radius: 10px;
-}
-.info{
-    padding-top: 10%;
-    width: 300px;
-    text-align: justify;
+.contentE {
+  text-align: center;
+  padding: 0px !important;
 }
 
-  .cardsE .cardE:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease;
+.Typography {
+  text-align: center;
+}
+
+.textFirst {
+  margin-left: 15px !important;
+}
+
+.line3 {
+  width: 220px;
+  display: inline-flex;
+  justify-content: center;
+  /* animation: lineMovement 3s; */
+  /* -moz-animation: lineMovement 3s; */
+  /* -webkit-animation: lineMovement 3s; */
+  /* -o-animation: lineMovement 3s; */
+}
+
+.imageE {
+  height: 130px;
+  width: 130px;
+  margin: 15%;
+  border-radius: 10px;
+}
+
+.info {
+  padding-top: 10%;
+  width: 300px;
+  text-align: justify;
+}
+
+@keyframes headingMovement {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
   }
 
-  @keyframes headingMovement {
-    from {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes lineMovement {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
 
-  @keyframes lineMovement {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
-  @keyframes experience {
-    from {
-      opacity: 0;
-      transform: translateX(100px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+}
+
+@keyframes experience {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
   }
-  @media screen and (max-width: 600px){
-    .experience{
-      padding-top: 20%;
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
-  }
+}
+

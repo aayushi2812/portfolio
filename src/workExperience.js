@@ -10,8 +10,8 @@ import "./workExperience.css";
 
 function WorkExperience({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
   return (
-    <div id="workExperience" className="experience" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: "white" }}>
-      <h1 style={toggleDarkMode ? { color: quaternary } : { color: secondary }}>Experience</h1>
+    <div id="workExperience" className="experience" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: primary }}>
+      <h1 style={toggleDarkMode ? { color: quaternary } : { color: quaternary }}>Experience</h1>
       <div className="line3" style={toggleDarkMode ? {borderTop: `3px solid ${quaternary}`} : {borderTop: `3px solid ${secondary}`}}></div>
       <div className="row cardsE">
         <div className="col">

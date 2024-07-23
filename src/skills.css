@@ -39,10 +39,10 @@
     height: 120px !important;
     width: 120px !important;
     opacity: 1;
-    animation: skills 3s;
-    -moz-animation: skills 3s;
-    -webkit-animation: skills 3s;
-    -o-animation: skills 3s;
+    /* animation: skills 3s; */
+    /* -moz-animation: skills 3s; */
+    /* -webkit-animation: skills 3s; */
+    /* -o-animation: skills 3s; */
 }
 
 @keyframes skills {
@@ -57,15 +57,15 @@
     }
   }
 .image-skills:hover{
-    height: 80;
+    /* height: 80;
     width: 80;
-    transition-duration: 0.3s;
+    transition-duration: 0.3s; */
 }
 
 .btn:hover .image-skills {
-    opacity: 1;
+    /* opacity: 1;
     height: 20;
-    width: 20;
+    width: 20; */
 }
 .bottom{
     opacity: 0;
@@ -73,11 +73,11 @@
     margin-top: 10%;
 }
 .btn:hover{
-    transform: scale(1.05);
-    transition: 0.3s ease;
+    /* transform: scale(1.05);
+    transition: 0.3s ease; */
 }
 .btn:hover .bottom {
-    opacity: 1;
+    /* opacity: 1; */
   }
 
   .top{
@@ -88,10 +88,10 @@
     padding-top: 7%;
 }
 .skills h1{
-    animation: headingMovement 3s infinite;
-    -moz-animation: headingMovement 3s;
-    -webkit-animation: headingMovement 3s;
-    -o-animation: headingMovement 3s;
+    /* animation: headingMovement 3s infinite; */
+    /* -moz-animation: headingMovement 3s; */
+    /* -webkit-animation: headingMovement 3s; */
+    /* -o-animation: headingMovement 3s; */
     animation-play-state: running;
 }
 .progress-bar{
@@ -106,10 +106,10 @@
     width: 150px;
     display: inline-flex;
     justify-content: center;
-    animation: lineMovement 3s;
-    -moz-animation: lineMovement 3s;
-    -webkit-animation: lineMovement 3s;
-    -o-animation: lineMovement 3s;
+    /* animation: lineMovement 3s; */
+    /* -moz-animation: lineMovement 3s; */
+    /* -webkit-animation: lineMovement 3s; */
+    /* -o-animation: lineMovement 3s; */
     animation-play-state: running !important;
 }
 .skills-data{
@@ -151,7 +151,7 @@
       margin: 0;
     }
     .btn-lg:hover{
-      transform: scale(1);
+      /* transform: scale(1); */
     }
     .box{
       width: 150px;

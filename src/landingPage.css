@@ -44,7 +44,7 @@
 
 .listItemText{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
-  
+
 }
 
 .coding {
@@ -244,33 +244,26 @@
   z-index: 9999;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1200px) {
+  .intro {
+    padding-top: 30%;
+  }
+
+  .coding{
+    height: 300px;
+    width: 300px;
+  }
+
   .text-first {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .text-second1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .text-second2 {
-    font-size: 40px;
-  }
-
-  .buttons{
-    justify-content: center; 
-    padding-top: 10%
-  }
-
-  .intro {
-    display: grid;
-    padding-top: 30%;
-    height: 600px;
-  }
-  .coding{
-    height: 200px;
-    width: 200px;
-    margin-top: 20%;
+    font-size: 50px;
   }
 
   .btn-landing-page {
@@ -338,26 +331,34 @@
     height: 25px;
   }
 }
-@media screen and (max-width: 1200px) {
-  .intro {
-    padding-top: 30%;
-  }
 
-  .coding{
-    height: 300px;
-    width: 300px;
-  }
-
+@media screen and (max-width: 650px) {
   .text-first {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .text-second1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .text-second2 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .buttons{
+    justify-content: center; 
+    padding-top: 10%
+  }
+
+  .intro {
+    display: grid;
+    padding-top: 30%;
+    height: 1000px;
+  }
+  .coding{
+    height: 200px;
+    width: 200px;
+    margin-top: 20%;
   }
 
   .btn-landing-page {
@@ -380,3 +381,5 @@
     height: 25px;
   }
 }
+
+

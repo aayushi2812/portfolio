@@ -27,25 +27,25 @@
 }
 
 .animate-on-scroll {
-  animation: headingMovement 3s;
+  /* animation: headingMovement 3s;
   -moz-animation: headingMovement 3s;
   -webkit-animation: headingMovement 3s;
-  -o-animation: headingMovement 3s;
+  -o-animation: headingMovement 3s; */
 }
 
 .animate {
-  animation: headingMovement 3s;
+  /* animation: headingMovement 3s;
   -moz-animation: headingMovement 3s;
   -webkit-animation: headingMovement 3s;
-  -o-animation: headingMovement 3s;
+  -o-animation: headingMovement 3s; */
 }
 
 .intro-data {
   display: flex;
-  animation: myphoto 3s;
+  /* animation: myphoto 3s;
   -moz-animation: myphoto 3s;
   -webkit-animation: myphoto 3s;
-  -o-animation: myphoto 3s;
+  -o-animation: myphoto 3s; */
   padding-top: 3%;
 }
 
@@ -53,10 +53,10 @@
   height: 500px;
   width: 400px;
   border-radius: 10% !important;
-  animation: myphoto 3s;
+  /* animation: myphoto 3s;
   -moz-animation: myphoto 3s;
   -webkit-animation: myphoto 3s;
-  -o-animation: myphoto 3s;
+  -o-animation: myphoto 3s; */
 }
 
 .line {
@@ -64,10 +64,10 @@
   width: 220px;
   display: inline-flex;
   justify-content: center;
-  animation: lineMovement 3s;
+  /* animation: lineMovement 3s;
   -moz-animation: lineMovement 3s;
   -webkit-animation: lineMovement 3s;
-  -o-animation: lineMovement 3s;
+  -o-animation: lineMovement 3s; */
 }
 
 @keyframes headingMovement {

@@ -10,9 +10,9 @@ import "./projects.css";
 
 function Projects({ toggleDarkMode, primary, secondary, tertiary, quaternary }) {
   return (
-    <div id="projects" className="projects" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: "white" }}>
-      <h1 style={toggleDarkMode ? { color: quaternary } : { color: secondary }}>Projects</h1>
-      <div className="line2" style={toggleDarkMode ? { borderTop: `3px solid ${quaternary}` } : { borderTop: `3px solid ${secondary}` }}></div>
+    <div id="projects" className="projects" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: primary }}>
+      <h1 style={toggleDarkMode ? { color: quaternary } : { color: quaternary }}>Projects</h1>
+      <div className="line2" style={toggleDarkMode ? { borderTop: `3px solid ${quaternary}` } : { borderTop: `3px solid ${quaternary}` }}></div>
       <div className="row cards">
         <div className="col">
           <Card sx={{ minWidth: 275 }} className="card" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>

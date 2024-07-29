@@ -2,7 +2,7 @@
   text-align: center;
   font-family:'Times New Roman', Times, serif;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .components{
   height: fit-content;

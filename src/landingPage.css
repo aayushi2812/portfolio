@@ -29,6 +29,9 @@
 .content-block{
   padding-top: 3%;
 }
+.beforeImg{
+  height: 2px;
+}
 
 .text-first {
   font-size: 50px;
@@ -246,7 +249,7 @@
 
 @media screen and (max-width: 1200px) {
   .intro {
-    padding-top: 30%;
+    padding-top: 20%;
   }
 
   .coding{
@@ -356,8 +359,8 @@
     height: 1000px;
   }
   .coding{
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     margin-top: 20%;
   }
 

@@ -142,7 +142,7 @@ function HeaderBar({ toggleDarkMode, primary, secondary, tertiary, quaternary, t
         </nav>
       </div>
       <div className='intro' style={{ backgroundColor: primary, color: quaternary }}>
-        <div>
+        <div className='beforeImg'>
           <div className='content-block'>
             <div>
               <p className='text-first'>Hello, I am <p className='text-second1'>Aayushi Parekh</p>

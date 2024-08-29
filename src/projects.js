@@ -9,6 +9,12 @@ import {
 import "./projects.css";
 
 function Projects({ toggleDarkMode, primary, secondary, tertiary, quaternary }) {
+
+  const handleClick = (event) => {
+    const url = "https://www.figma.com/proto/CEpngsNW5mJJjgnc1uExBp/Feet-Off-the-Ground?node-id=1-2&node-type=CANVAS&t=zb1cMvDQEcCkPTsD-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2";
+    window.open(url, '_blank');
+  }
+  
   return (
     <div id="projects" className="projects" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: primary }}>
       <h1 style={toggleDarkMode ? { color: quaternary } : { color: quaternary }}>Projects</h1>
@@ -20,14 +26,12 @@ function Projects({ toggleDarkMode, primary, secondary, tertiary, quaternary }) 
               <img src="/techdotcare.png" alt="logo" className='projectImage' />
               <p className="details">
               Introducing TechdotCare – a tool that enables healthcare professionals to seamlessly access patient information, 
-              including diagnostic history, a list of diagnoses and their current status, lab results, and contact information.
+              like diagnostic history and contact information.
               <br /><br />
               Technologies used: Angular 17, Chart.js
               </p>
+                  <a style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }} href="https://github.com/aayushi2812/tech-care">View Project <i class="bi bi-arrow-right"></i></a>
             </CardContent>
-            <CardActions>
-              {/* <Button size="small">Learn More</Button> */}
-            </CardActions>
           </Card>
         </div>
         <div className="col"><Card sx={{ minWidth: 275 }} className="card" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
@@ -38,24 +42,32 @@ function Projects({ toggleDarkMode, primary, secondary, tertiary, quaternary }) 
               <br /><br />
               Technologies used: Angular, ASP.NET, PostgreSQL
             </p>
+              <a style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }} href="https://github.com/aayushi2812/ToDoQuarryFrontend">View Project <i class="bi bi-arrow-right"></i></a>
           </CardContent>
-          <CardActions>
-            {/* <Button size="small">Learn More</Button> */}
-          </CardActions>
         </Card>
         </div>
         <div className="col"><Card sx={{ minWidth: 275 }} className="card" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
           <CardContent className="content">
             <img src="/worldwise.png" alt="logo" className='projectImage' />
             <p className="details">
-            Embark on a journey like never before with WorldWise, your ultimate travel companion designed to keep track of your adventures and the places you've visited.
+            Introducing WorldWise - Ultimate travel companion designed to keep track of your adventures and the places you've visited.
             <br/><br/>
             Technologies used: React, Vite
             </p>
+              <a style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }} href="https://github.com/aayushi2812/worldwise-react-app">View Project <i class="bi bi-arrow-right"></i></a>
           </CardContent>
-          <CardActions>
-            {/* <Button size="small">Learn More</Button> */}
-          </CardActions>
+        </Card>
+        </div>
+        <div className="col"><Card sx={{ minWidth: 275 }} className="card" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
+          <CardContent className="content">
+            <img src="/feetoftheground.png" alt="logo" className='projectImage' />
+            <p className="details">
+            Introducing FeetoftheGround - A design for a mobile application featuring different dance forms and details about them.
+            <br/><br/>
+            Technologies used: Figma
+            </p>
+              <a style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }} href='https://www.figma.com/proto/CEpngsNW5mJJjgnc1uExBp/Feet-Off-the-Ground?node-id=1-2&node-type=CANVAS&t=zb1cMvDQEcCkPTsD-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2'>View Project <i class="bi bi-arrow-right"></i></a>
+          </CardContent>
         </Card>
         </div>
       </div>

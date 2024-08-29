@@ -1,7 +1,4 @@
-import { useEffect, useState } from "react";
-import "./skills.css";
-import { useRef } from "react";
-import { useIntersection } from "react-use";
+ import "./skills.css";
 
 function Skills({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
 
@@ -22,6 +19,13 @@ function Skills({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
             CSS
           </div>
           <img src='/css.png' alt='css' className="image-skills" />
+        </button>
+        </div>
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary, borderColor: quaternary }}>
+          <div class="top">
+            Tailwind CSS
+          </div>
+          <img src='/tailwind.png' alt='mysql' className="image-skills" />
         </button>
         </div>
         <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary, borderColor: quaternary }}>
@@ -47,7 +51,7 @@ function Skills({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
         </div>
         <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary, borderColor: quaternary }}>
           <div class="top">
-            Nodejs
+            Node
           </div>
           <img src='/nodejs.png' alt='node' className="image-skills" />
         </button>
@@ -75,9 +79,16 @@ function Skills({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
         </div>
         <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary, borderColor: quaternary }}>
           <div class="top">
-            MySQL
+            Oracle
           </div>
-          <img src='/mysql.png' alt='mysql' className="image-skills" />
+          <img src='/oracle.jpg' alt='mysql' className="image-skills" />
+        </button>
+        </div>
+        <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary, borderColor: quaternary }}>
+          <div class="top">
+            Mongo
+          </div>
+          <img src='/mongo.jpg' alt='mysql' className="image-skills" />
         </button>
         </div>
       </div>

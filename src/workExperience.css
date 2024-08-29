@@ -82,7 +82,7 @@
 .info {
   padding-top: 10%;
   width: 300px;
-  text-align: justify;
+  text-align: left;
 }
 
 @keyframes headingMovement {

@@ -28,9 +28,9 @@
     height:400px;
 }
 .contactMe-card-intro{
-    padding-top: 2%;
+    padding-top: 3%;
     border: none;
-    height:400px;
+    height:450px;
 }
 .contactMe-card-intro h1{
 }
@@ -151,4 +151,9 @@
   .backontop{
     padding-top: 10%;
   }
+  .contactMe-card-intro{
+    padding-top: 10%;
+    border: none;
+    height:450px;
+}
 }

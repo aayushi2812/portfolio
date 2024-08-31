@@ -41,13 +41,6 @@ function ContactMe({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
         <h1 style={toggleDarkMode ? { color: quaternary } : { color: quaternary }}>Contact Me</h1>
         <div className="line4" style={toggleDarkMode ? {borderTop: `3px solid ${quaternary}`} : {borderTop: `3px solid ${quaternary}`}}></div>
         <CardContent className="content">
-          {/* <h5>Have a question or want to work together?</h5>
-          <form className="form" onSubmit={handleSubmit}>
-            <input className='inputTag' name="name" type="name" id="name" value={formData.name} onChange={handleChange} placeholder="Name" required></input><br />
-            <input className='inputTag' name="email" type="email" id="email" value={formData.email} onChange={handleChange} placeholder="Email" required></input><br />
-            <input className='inputTagMessage' name="message" type="text" id="message" value={formData.message0} onChange={handleChange} placeholder="Message" required></input><br />
-            <button class="btn submitButton" type="submit">Submit</button>
-          </form> */}
           <div className="question"><h5>Have a question or want to work together?</h5></div>
           <a className="a-tag" onMouseEnter={(e) => {e.target.style.color=secondary}} onMouseLeave={(e) => {e.target.style.color=quaternary}} style={{color: quaternary}} href="https://www.linkedin.com/in/aayushi-parekh-08426a181/"><i class="bi bi-linkedin"></i></a>
           <a className="a-tag" onMouseEnter={(e) => {e.target.style.color=secondary}} onMouseLeave={(e) => {e.target.style.color=quaternary}} style={{color: quaternary}} href="https://github.com/aayushi2812"><i class="bi bi-github"></i></a>

@@ -164,7 +164,23 @@
   margin: 5%;
 }
 
-.btn-landing-page {
+.btn-landing-page-1 {
+  font-weight: bold;
+  height: 50px;
+  width: 200px;
+  font-size: large;
+  margin-right: 5%;
+  box-shadow: 0px 0px 0px 2px #F8FAE5;
+  transition-duration: 0.3s;
+  animation: buttonMovement 3s;
+  -moz-animation: buttonMovement 3s;
+  /* Firefox */
+  -webkit-animation: buttonMovement 3s;
+  /* Safari and Chrome */
+  -o-animation: buttonMovement 3s;
+  /* Opera */
+}
+.btn-landing-page-2 {
   font-weight: bold;
   height: 50px;
   width: 200px;
@@ -181,7 +197,10 @@
   /* Opera */
 }
 
-.btn.btn-landing-page:hover {
+.btn.btn-landing-page-1:hover {
+  transition-duration: 0.3s;
+}
+.btn.btn-landing-page-2:hover {
   transition-duration: 0.3s;
 }
 
@@ -269,7 +288,16 @@
     font-size: 50px;
   }
 
-  .btn-landing-page {
+  .btn-landing-page-1 {
+    height: 35px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 500 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-landing-page-2 {
     height: 35px;
     width: 150px;
     font-size: 15px;
@@ -314,7 +342,16 @@
     font-size: 40px;
   }
 
-  .btn-landing-page {
+  .btn-landing-page-1 {
+    height: 35px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 500 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-landing-page-2 {
     height: 35px;
     width: 150px;
     font-size: 15px;
@@ -363,9 +400,18 @@
     width: 300px;
   }
 
-  .btn-landing-page {
+  .btn-landing-page-1 {
     height: 35px;
     width: 165px;
+    font-size: 15px;
+    font-weight: 500 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-landing-page-2 {
+    height: 35px;
+    width: 150px;
     font-size: 15px;
     font-weight: 500 !important;
     display: flex;

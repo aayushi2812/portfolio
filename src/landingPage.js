@@ -151,10 +151,10 @@ function HeaderBar({ toggleDarkMode, primary, secondary, tertiary, quaternary, t
           </div><br />
           <div>
             <div style={{ display: 'flex' }}>
-              <button class="btn btn-landing-page" onMouseOver={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary; e.target.style.borderColor = quaternary }} style={{ backgroundColor: quaternary, color: secondary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} onClick={() => scrollToSection("introduction")}>
+              <button class="btn btn-landing-page-1" onMouseOver={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary; e.target.style.borderColor = quaternary }} style={{ backgroundColor: quaternary, color: secondary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} onClick={() => scrollToSection("introduction")}>
               View more about me</button>
               <a href={require("./AayushiParekh.pdf")} download="Aayushi Parekh - Resume" target="_blank" rel="noreferrer">
-                <button class="btn btn-landing-page" onMouseOver={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary; e.target.style.borderColor = quaternary }} onMouseEnter={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} style={{ backgroundColor: quaternary, color: secondary }}>
+                <button class="btn btn-landing-page-2" onMouseOver={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary; e.target.style.borderColor = quaternary }} onMouseEnter={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} style={{ backgroundColor: quaternary, color: secondary }}>
                   Resume<i class="bi bi-download"></i></button></a>
             </div>
           </div>

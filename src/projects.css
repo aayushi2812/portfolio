@@ -3,12 +3,6 @@
   height: 850px;
 }
 
-.projects h1 {
-  /* animation: headingMovement 3s; */
-  /* -moz-animation: headingMovement 3s; */
-  /* -webkit-animation: headingMovement 3s; */
-  /* -o-animation: headingMovement 3s; */
-}
 
 .cards {
   display: flex;
@@ -30,14 +24,6 @@
   display: inline-flex;
   text-align: center;
   justify-content: space-between;
-  /* animation: skills 3s; */
-  /* -moz-animation: skills 3s; */
-  /* -webkit-animation: skills 3s; */
-  /* -o-animation: skills 3s; */
-}
-.cards .card:hover {
-  /* transform: scale(1.05) !important; */
-  /* transition: 0.3s ease;  */
 }
 .col{
   align-items: center;
@@ -65,24 +51,16 @@
   margin-left: 15px !important;
 }
 
-.cards .card:hover {
-  /* transition: 0.3s ease; */
-}
 
 .line2 {
   width: 180px;
   display: inline-flex;
   justify-content: center;
-  /* animation: lineMovement 3s; */
-  /* -moz-animation: lineMovement 3s; */
-  /* -webkit-animation: lineMovement 3s; */
-  /* -o-animation: lineMovement 3s; */
 }
 
 @keyframes headingMovement {
   from {
     opacity: 0;
-    /* transform: translateY(-50px); */
   }
 
   to {
@@ -116,9 +94,6 @@
 }
 
 @media screen and (max-width: 1600px) {
-  /* .card {
-    transform: scale(0.8);
-  } */
   .projects{
     height: 1300px !important;
   }
@@ -137,9 +112,6 @@
   .card{
     transform: scale(0.8);
   }
-  .card:hover{
-    /* transform: scale(1); */
-  }
   .projects{
     height: 2200px !important;
   } 
@@ -156,8 +128,5 @@
   }
   .card{
     transform: scale(0.8);
-  }
-  .card:hover{
-    /* transform: scale(1); */
   }
 }

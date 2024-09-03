@@ -55,43 +55,31 @@ function HeaderBar({ toggleDarkMode, primary, secondary, tertiary, quaternary, t
     <Box sx={{ width: '100%' }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
         <i class="bi bi-x" onClick={toggleDrawer(false)}></i>
-        {/* {['About', 'Projects', 'Resume', 'Contact Me'].map((text, index) => ( */}
         <ListItem key='About' onClick={() => scrollToSection("introduction")}>
           <ListItemButton>
-            {/* <ListItemIcon>
-              </ListItemIcon> */}
             <ListItemText className='listItemText' primary='About' />
           </ListItemButton>
         </ListItem>
         <ListItem key='Skills' onClick={() => scrollToSection("skills")}>
           <ListItemButton>
-            {/* <ListItemIcon>
-              </ListItemIcon> */}
             <ListItemText className='listItemText' primary='Skills' />
           </ListItemButton>
         </ListItem>
         <ListItem key='WorkExperience' onClick={() => scrollToSection("workExperience")}>
           <ListItemButton>
-            {/* <ListItemIcon>
-              </ListItemIcon> */}
             <ListItemText className='listItemText' primary='Work Experience' />
           </ListItemButton>
         </ListItem>
         <ListItem key='Projects' onClick={() => scrollToSection("projects")}>
           <ListItemButton>
-            {/* <ListItemIcon>
-              </ListItemIcon> */}
             <ListItemText className='listItemText' primary='Projects' />
           </ListItemButton>
         </ListItem>
         <ListItem key='Contact Me' onClick={() => scrollToSection("contactMe")}>
           <ListItemButton>
-            {/* <ListItemIcon>
-              </ListItemIcon> */}
             <ListItemText className='listItemText' primary='Contact Me' />
           </ListItemButton>
         </ListItem>
-        {/* ))} */}
       </List>
     </Box>
   );
@@ -153,7 +141,7 @@ function HeaderBar({ toggleDarkMode, primary, secondary, tertiary, quaternary, t
             <div style={{ display: 'flex' }}>
               <button class="btn btn-landing-page-1" onMouseOver={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary; e.target.style.borderColor = quaternary }} style={{ backgroundColor: quaternary, color: secondary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} onClick={() => scrollToSection("introduction")}>
               View more about me</button>
-              <a href={require("./AayushiParekh.pdf")} download="Aayushi Parekh - Resume" target="_blank" rel="noreferrer">
+              <a href={require("./Aayushi_Parekh_Resume.pdf")} download="Aayushi Parekh - Resume" target="_blank" rel="noreferrer">
                 <button class="btn btn-landing-page-2" onMouseOver={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary; e.target.style.borderColor = quaternary }} onMouseEnter={(e) => { e.target.style.backgroundColor = primary; e.target.style.color = quaternary }} onMouseLeave={(e) => { e.target.style.backgroundColor = quaternary; e.target.style.color = secondary }} style={{ backgroundColor: quaternary, color: secondary }}>
                   Resume<i class="bi bi-download"></i></button></a>
             </div>

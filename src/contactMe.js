@@ -5,18 +5,6 @@ import { useState } from "react";
 function ContactMe({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(event.target);
-    alert(`Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
-    );
-  }
-
   const handleMouseAction = (event) => {
     if(toggleDarkMode){
       event.target.style.backgroundColor=quaternary; 

@@ -21,7 +21,6 @@
     transition-duration: .3s;
   }
 .contactMeCard{
-    /* padding-top: 5%; */
     text-align
     : center;
     font-size: 18px;
@@ -112,13 +111,6 @@
     margin: 5%;
     box-shadow: 0px 0px 0px 2px #CBE4DE;
     transition-duration: 0.3s;
-    /* animation: buttonMovement 3s; */
-    /* -moz-animation: buttonMovement 3s; */
-    /* Firefox */
-    /* -webkit-animation: buttonMovement 3s; */
-    /* Safari and Chrome */
-    /* -o-animation: buttonMovement 3s; */
-    /* Opera */
   }
   @keyframes buttonMovement {
     from {
@@ -136,10 +128,6 @@
     width: 220px;
     display: inline-flex;
     justify-content: center;
-    /* animation: lineMovement 3s; */
-  /* -moz-animation: lineMovement 3s; */
-  /* -webkit-animation: lineMovement 3s; */
-  /* -o-animation: lineMovement 3s; */
 }
 .content{
     margin-top: 2%;

@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CssBaseline, Switch, ThemeProvider, createTheme } from '@mui/material';
 import { createContext, useMemo, useState } from 'react';
 
+//default theme
 const lightTheme = createTheme({
   palette: {
     primary: {
@@ -25,7 +26,7 @@ function App() {
   const [toggleDarkMode, setToggleDarkMode] = useState(true);
   
   const darkTheme = createTheme({
-    palette: { //default theme
+    palette: { 
       mode: toggleDarkMode ? 'dark' : 'light',
       primary: {
         main: '#17153B',
@@ -58,7 +59,6 @@ function App() {
         <CssBaseline />
         <div className='app'>
           <BrowserRouter>
-          {/* <Switch checked={toggleDarkMode} onChange={toggleDarkTheme} /> */}
             <Routes>
               <Route path="/" element={<LandingPage theme={theme} toggleDarkMode={toggleDarkMode} toggleDarkTheme={toggleDarkTheme}/>}>
               </Route>

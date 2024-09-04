@@ -11,7 +11,7 @@ function Skills({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
           <div class="top">
             HTML
           </div>
-          <img src='/html1.png' alt='html' className="image-skills" />
+          <img src='/html.png' alt='html' className="image-skills" />
         </button>
         </div>
         <div className="col-xs-5-cols"><button type="button" class="btn btn-lg box" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary, borderColor: quaternary }}>

@@ -58,7 +58,7 @@ function Projects({
             <CardContent className="content">
               <img src="/itprepmate.png" alt="logo" className="projectImage" />
               <p className="details">
-                Introducing ITPrepMate – a platform dedicated to helping others
+                ITPrepMate – a platform dedicated to helping others
                 navigate their career journeys in tech as a newcomer to Canada.
                 <br />
                 <br />
@@ -91,7 +91,7 @@ function Projects({
             <CardContent className="content">
               <img src="/techdotcare.png" alt="logo" className="projectImage" />
               <p className="details">
-                Introducing TechdotCare – a tool that enables healthcare
+                TechdotCare – a tool that enables healthcare
                 professionals to seamlessly access patient information, like
                 diagnostic history and contact information.
                 <br />
@@ -123,9 +123,75 @@ function Projects({
             }
           >
             <CardContent className="content">
+              <img src="/dsd.png" alt="logo" className="projectImage" />
+              <p className="details">
+                Dark Sky Destinations - Ultimate app for Stargazing enthusiasts and astronomy lovers. 
+                Checkout the application code in Github.
+                <br />
+                <br />
+                Technologies used: Kotlin, Jetpack Compose
+              </p>
+              <a
+                style={
+                  toggleDarkMode
+                    ? { backgroundColor: quaternary, color: secondary }
+                    : { backgroundColor: primary, color: quaternary }
+                }
+                href="https://darkskydestinations.netlify.app/"
+                target="_blank"
+              >
+                View Project <i class="bi bi-arrow-right"></i>
+              </a>
+            </CardContent>
+          </Card>
+        </div>
+        <div className="col">
+          <Card
+            sx={{ minWidth: 275 }}
+            className="card"
+            style={
+              toggleDarkMode
+                ? { backgroundColor: quaternary, color: secondary }
+                : { backgroundColor: primary, color: quaternary }
+            }
+          >
+            <CardContent className="content">
+              <img src="/ios.png" alt="logo" className="projectImage" />
+              <p className="details">
+                Stock Application – an iOS app designed to help users monitor and 
+                track their favorite stocks efficiently. 
+                <br />
+                <br />
+                Technologies used: Swift
+              </p>
+              <a
+                style={
+                  toggleDarkMode
+                    ? { backgroundColor: quaternary, color: secondary }
+                    : { backgroundColor: primary, color: quaternary }
+                }
+                href="https://stocks-application.netlify.app/"
+                target="_blank"
+              >
+                View Project <i class="bi bi-arrow-right"></i>
+              </a>
+            </CardContent>
+          </Card>
+        </div>
+        <div className="col">
+          <Card
+            sx={{ minWidth: 275 }}
+            className="card"
+            style={
+              toggleDarkMode
+                ? { backgroundColor: quaternary, color: secondary }
+                : { backgroundColor: primary, color: quaternary }
+            }
+          >
+            <CardContent className="content">
               <img src="/todo.png" alt="logo" className="projectImage" />
               <p className="details">
-                Introducing ToDoQuarry - a Todo list application using CRUD
+                ToDoQuarry - a Todo list application using CRUD
                 operations where we can read, create, update and delete our
                 tasks.
                 <br />
@@ -159,7 +225,7 @@ function Projects({
             <CardContent className="content">
               <img src="/worldwise.png" alt="logo" className="projectImage" />
               <p className="details">
-                Introducing WorldWise - Ultimate travel companion designed to
+                WorldWise - Ultimate travel companion designed to
                 keep track of your adventures and the places you've visited.
                 <br />
                 <br />

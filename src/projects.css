@@ -104,7 +104,7 @@
     transform: scale(0.8);
   }
   .projects{
-    height: 1200px !important;
+    height: 1800px !important;
   }
 }
 
@@ -113,14 +113,14 @@
     transform: scale(0.8);
   }
   .projects{
-    height: 2200px !important;
+    height: 3200px !important;
   } 
 }
 
 @media screen and (max-width: 600px) {
   .projects {
     padding-top: 20%;
-    height: 2300px !important;
+    height: 3200px !important;
   }
   .projectImage{
     height:200px; 
@@ -129,4 +129,4 @@
   .card{
     transform: scale(0.8);
   }
-}
+} 

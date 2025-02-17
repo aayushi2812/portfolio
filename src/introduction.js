@@ -17,8 +17,8 @@ function introduction({toggleDarkMode, primary, secondary, tertiary, quaternary}
               </div>
               <div class="col-md-6 intro-text animate-on-scroll">
                 <p style={toggleDarkMode ? { color: quaternary } : { color: quaternary }}>
-                  I am a Software Developer with 3+ years of experience in tech industry. My educational background is Bachelor’s Degree in Computer Engineering. 
-                  My expertise includes Angular, Java, Spring Boot and Oracle. I am most proud of creating user-friendly applications and implementing efficient backend solutions.
+                  I am a Software Developer with 4+ years of experience in tech industry with expertise in Java, Spring Boot, Angular and Oracle. My educational background is Bachelor’s Degree in Computer Engineering. 
+                  I am most proud of creating user-friendly applications and implementing efficient backend solutions.
                   <br /><br/>
                   I am looking forward to exploring opportunities in Full Stack Development so that I can leverage my skills to build robust and scalable web applications 
                   and services and contribute to innovative projects that enhance user experiences.

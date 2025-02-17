@@ -24,7 +24,7 @@ function WorkExperience({toggleDarkMode, primary, secondary, tertiary, quaternar
                 </Typography>
                 <Typography sx={{ mb: 2 }}>Systems Engineer</Typography>
                 <Typography sx={{ fontSize: 14 }} gutterBottom>
-                  Nov 2020 - Jan 2023
+                  Nov 2020 - Jan 2024
                 </Typography>
                 <Typography sx={{ mb:2 }} gutterBottom className="info">
                 Worked as Full Stack Developer majorly with Angular and Spring Boot specializing in the development of robust Banking applications and systems. 

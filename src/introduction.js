@@ -17,13 +17,13 @@ function introduction({toggleDarkMode, primary, secondary, tertiary, quaternary}
               </div>
               <div class="col-md-6 intro-text animate-on-scroll">
                 <p style={toggleDarkMode ? { color: quaternary } : { color: quaternary }}>
-                  I am a Software Developer with 4+ years of experience in tech industry with expertise in Java, Spring Boot, Angular and Oracle. My educational background is Bachelor’s Degree in Computer Engineering. 
-                  I am most proud of creating user-friendly applications and implementing efficient backend solutions.
-                  <br /><br/>
-                  I am looking forward to exploring opportunities in Full Stack Development so that I can leverage my skills to build robust and scalable web applications 
-                  and services and contribute to innovative projects that enhance user experiences.
-                  <br/><br/>
-                  Explore my portfolio to discover my skills and professional journey, and let's connect to discuss potential opportunities!
+                  I am a passionate Full Stack Developer with a strong foundation in building dynamic, user-centric applications using modern technologies like React, Angular, Spring Boot, and Oracle.
+                  <br /><br />
+                  With over 4 years of hands-on experience in software development, I’ve had the opportunity to design, develop, and deploy scalable solutions - from robust banking systems, mobile applications to AI-powered tools. I thrive on turning complex problems into intuitive digital experiences, whether it’s crafting responsive UIs or architecting efficient backend APIs.
+                  <br /><br />
+                  I’ve worked with cross-functional teams, led projects from scratch, and collaborated closely with stakeholders to deliver impactful results. This portfolio showcases a collection of my work - real-world applications, side projects, and coding experiments that reflect my journey, skills, and passion for clean, maintainable code.
+                  <br /><br />
+                  Let’s build something amazing together.
                 </p>
               </div>
             </div>

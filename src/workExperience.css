@@ -15,12 +15,12 @@
 
 .cardE {
   border: solid;
-  height: 500px;
-  width: 400px;
+  height: 150px;
+  width: 250px;
   display: inline-flex;
   text-align: center;
   justify-content: center;
-  border-radius: 50px !important;
+  /* border-radius: 50px !important; */
 }
 
 @media screen and (max-width: 600px) {
@@ -31,16 +31,17 @@
 }
 
 .contentE {
-  text-align: center;
-  padding: 0px !important;
+  text-align: left;
+  padding-top: 30px !important;
 }
 
 .Typography {
-  text-align: center;
+  text-align: left;
 }
 
 .textFirst {
-  margin-left: 15px !important;
+  margin-left: 0 !important;
+  font-size: 50px;
 }
 
 .line3 {
@@ -50,8 +51,8 @@
 }
 
 .imageE {
-  height: 130px;
-  width: 130px;
+  height: 100px;
+  width: 100px;
   margin: 15%;
   border-radius: 10px;
 }
@@ -95,6 +96,117 @@
   to {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+.experience-timeline {
+  position: relative;
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #808080;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 3px solid #000000;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.timeline-item.current .timeline-marker {
+  border-color: #000;
+}
+
+.timeline-content {
+  width: 45%;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.left .timeline-content {
+  margin-right: auto;
+  margin-left: 0;
+  text-align: right;
+}
+
+.right .timeline-content {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: left;
+}
+
+.contentE {
+  padding: 0 !important;
+}
+
+.job-title {
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+}
+
+.company {
+  font-style: italic !important;
+  margin-bottom: 8px !important;
+}
+
+.period {
+  color: #808080 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+  
+  .timeline-marker {
+    left: 20px;
+  }
+  
+  .timeline-content {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+  }
+  
+  .left .timeline-content,
+  .right .timeline-content {
+    margin-left: 0;
   }
 }
 

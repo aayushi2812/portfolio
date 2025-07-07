@@ -8,75 +8,172 @@ import {
 } from "@mui/material";
 import "./workExperience.css";
 
-function WorkExperience({toggleDarkMode, primary, secondary, tertiary, quaternary}) {
+function WorkExperience({
+  toggleDarkMode,
+  primary,
+  secondary,
+  tertiary,
+  quaternary,
+}) {
+  const experiences = [
+    {
+      id: 1,
+      title: "Full Stack Developer Intern",
+      company: "Wouessi Inc, Toronto, Canada",
+      period: "Jun 2025 - Present",
+      isCurrent: true,
+    },
+    {
+      id: 2,
+      title: "Frontend Developer Intern",
+      company: "Gross Innovations Inc, Toronto, Canada",
+      period: "Mar 2025 - Present",
+      isCurrent: true,
+    },
+    {
+      id: 3,
+      title: "Prompt Engineer",
+      company: "Outlier, Toronto, Canada",
+      period: "Oct 2024 - Mar 2025",
+    },
+    {
+      id: 4,
+      title: "Back End Developer Intern",
+      company: "Kunye Financial Inc, Waterloo, Canada",
+      period: "Apr 2025",
+    },
+    {
+      id: 5,
+      title: "Systems Engineer",
+      company: "Tata Consultancy Services, India",
+      period: "Nov 2020 - Jan 2024",
+    },
+    {
+      id: 6,
+      title: "ASP.NET Developer",
+      company: "SSM Infotech Pvt. Ltd., India",
+      period: "May 2019 - June 2019",
+    },
+  ];
   return (
-    <div id="workExperience" className="experience" style={toggleDarkMode ? { backgroundColor: secondary } : { backgroundColor: primary }}>
-      <h1 style={toggleDarkMode ? { color: quaternary } : { color: quaternary }}>Experience</h1>
-      <div className="line3" style={toggleDarkMode ? {borderTop: `3px solid ${quaternary}`} : {borderTop: `3px solid ${secondary}`}}></div>
-      <div className="row cardsE">
-        <div className="col">
-          <Card sx={{ minWidth: 275 }} className="cardE" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
-            <CardContent className="contentE">
-              <div className="contentFirstExperience">
-              <img src="tcs.jpg" height={70} width={70} alt="tcs" className="imageE"/>
-                <Typography variant="h6" component="div" className="textFirst">
-                Tata Consultancy Services
-                </Typography>
-                <Typography sx={{ mb: 2 }}>Systems Engineer</Typography>
-                <Typography sx={{ fontSize: 14 }} gutterBottom>
-                  Nov 2020 - Jan 2024
-                </Typography>
-                <Typography sx={{ mb:2 }} gutterBottom className="info">
-                Worked as Full Stack Developer majorly with Angular and Spring Boot specializing in the development of robust Banking applications and systems. 
-                </Typography>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+    <div
+      id="workExperience"
+      className="experience"
+      style={
+        toggleDarkMode
+          ? { backgroundColor: secondary }
+          : { backgroundColor: primary }
+      }
+    >
+      <h1
+        style={toggleDarkMode ? { color: quaternary } : { color: quaternary }}
+      >
+        Experience
+      </h1>
+      <div
+        className="line3"
+        style={
+          toggleDarkMode
+            ? { borderTop: `3px solid ${quaternary}` }
+            : { borderTop: `3px solid ${secondary}` }
+        }
+      ></div>
 
-        <div className="col">
-          <Card sx={{ minWidth: 275 }} className="cardE" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
-            <CardContent className="contentE">
-              <div className="contentFirstExperience">
-              <img src="ssm.jpg" height={70} width={70} alt="ssm" className="imageE"/>
-                <Typography variant="h6" component="div" className="textFirst">
-                SSM Infotech Pvt. Ltd.
-                </Typography>
-                <Typography sx={{ mb: 2 }}>ASP.NET Developer</Typography>
-                <Typography sx={{ fontSize: 14 }} gutterBottom>
-                  May 2019 - June 2019
-                </Typography>
-                <Typography sx={{ mb:2 }} gutterBottom className="info">
-                Hands-on experience in developing responsive UX product using ASP.NET and learning best practices in development.
+      <div className="experience-timeline">
+        {/* <div className="timeline">
+          {experiences.map((exp, index) => (
+            <div key={exp.id} className={`timeline-item`}>
+              { index%2!==0 &&
+              <Card
+                className="timeline-content"
+                style={
+                  toggleDarkMode
+                    ? { backgroundColor: quaternary, color: secondary }
+                    : { backgroundColor: primary, color: quaternary }
+                }
+              >
+                <CardContent className="contentE">
+                  <div className="contentFirstExperience">
+                    <Typography className="job-title">{exp.title}</Typography>
+                    <Typography className="company">{exp.company}</Typography>
+                    <Typography className="period">{exp.period}</Typography>
+                  </div>
+                </CardContent>
+              </Card>
+            }
+              <div className="timeline-marker"></div>
 
-                </Typography>
-              </div>
-            </CardContent>
-          </Card>
+            { index%2===0 &&
+              <Card
+                className="timeline-content"
+                style={
+                  toggleDarkMode
+                    ? { backgroundColor: quaternary, color: secondary }
+                    : { backgroundColor: primary, color: quaternary }
+                }
+              >
+                <CardContent className="contentE">
+                  <div className="contentFirstExperience">
+                    <Typography className="job-title">{exp.title}</Typography>
+                    <Typography className="company">{exp.company}</Typography>
+                    <Typography className="period">{exp.period}</Typography>
+                  </div>
+                </CardContent>
+              </Card>
+            }
+            </div>
+          ))}
+        </div> */}
+        <div className="timeline">
+          {experiences.map((exp, index) => (
+            <div 
+              key={exp.id} 
+              className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
+            >
+              {index % 2 === 0 && (
+                <Card
+                  className="timeline-content left-content"
+                  style={
+                    toggleDarkMode
+                      ? { backgroundColor: quaternary, color: secondary }
+                      : { backgroundColor: primary, color: quaternary }
+                  }
+                >
+                  <CardContent className="contentE">
+                    <div className="contentFirstExperience">
+                      <Typography className="job-title">{exp.title}</Typography>
+                      <Typography className="company">{exp.company}</Typography>
+                      <Typography className="period">{exp.period}</Typography>
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+              
+              <div className="timeline-marker"></div>
+              
+              {index % 2 !== 0 && (
+                <Card
+                  className="timeline-content right-content"
+                  style={
+                    toggleDarkMode
+                      ? { backgroundColor: quaternary, color: secondary }
+                      : { backgroundColor: primary, color: quaternary }
+                  }
+                >
+                  <CardContent className="contentE">
+                    <div className="contentFirstExperience">
+                      <Typography className="job-title">{exp.title}</Typography>
+                      <Typography className="company">{exp.company}</Typography>
+                      <Typography className="period">{exp.period}</Typography>
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+            </div>
+          ))}
         </div>
-
-        <div className="col">
-          <Card sx={{ minWidth: 275 }} className="cardE" style={toggleDarkMode ? { backgroundColor: quaternary, color: secondary } : { backgroundColor: primary, color: quaternary }}>
-            <CardContent className="contentE">
-              <div className="contentFirstExperience">
-                <img src="fgrade.jpg" height={70} width={70} alt="fgrade" className="imageE"/>
-                <Typography variant="h6" component="div" className="textFirst">
-                  FGrade Global Services
-                </Typography>
-                <Typography sx={{ mb: 2 }}>Technical Content Writer</Typography>
-                <Typography sx={{ fontSize: 14 }} gutterBottom>
-                Oct 2017 - Feb 2018
-                </Typography>
-                <Typography sx={{ mb:2 }} gutterBottom className="info">
-                Authored compelling articles, and website content on various technical topics like AI, ML, SEO etc.
-                </Typography>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-        
       </div>
-    </div>
+      </div>
   );
 }
 

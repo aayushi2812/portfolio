@@ -53,12 +53,10 @@
 .coding {
   height: 400px;
   width: 400px ;
-  animation: buttonMovement 3s;
+  /* animation: buttonMovement 3s;
   -moz-animation: buttonMovement 3s;
-  /* Firefox */
   -webkit-animation: buttonMovement 3s;
-  /* Safari and Chrome */
-  -o-animation: buttonMovement 3s;
+  -o-animation: buttonMovement 3s; */
 }
 
 @keyframes fadein {
